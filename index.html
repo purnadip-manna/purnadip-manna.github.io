@@ -24,19 +24,19 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 		  <ul class="navbar-nav mr-auto">
 			<li class="nav-item">
-			  <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+			  <a class="nav-link active" href="#home" id="op1" onclick="markActive('op1')">Home <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#about">About Me</a>
+				<a class="nav-link" href="#about" id="op2" onclick="markActive('op2')">About Me</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#myskills">Skills</a>
+				<a class="nav-link" href="#myskills" id="op3" onclick="markActive('op3')">Skills</a>
 			</li>
 			<li class="nav-item">
-			  <a class="nav-link" href="#project">Projects</a>
+			  <a class="nav-link" href="#project" id="op4" onclick="markActive('op4')">Projects</a>
 			</li>
 			<li class="nav-item">
-			  <a class="nav-link" href="#contact">Contact</a>
+			  <a class="nav-link" href="#contact" id="op5" onclick="markActive('op5')">Contact</a>
 			</li>
 		  </ul>
 		</div>
@@ -238,5 +238,15 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+  
+    <script>
+	    function markActive(id){
+	    	$(".active").removeClass("active");
+		$("#"+id).addClass("active");
+	    }
+    </script>
+	
+
+	
+</body>
 </html>
