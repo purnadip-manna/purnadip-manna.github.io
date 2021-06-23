@@ -5,11 +5,14 @@
 <body>
 	<script>
 		function qe(){
-			var qwert = "qwertyuiop[]\'asdfghjkl;'zxcvbnm,./"
+			var qwert = "qwertyuiop[]\'asdfghjkl;'zxcvbnm,./'1234567890-=' "
 			var str = document.getElementById("in").value;
 			outs = "";
 			for(i=0; i<str.length; i++){
-				outs+=qwert[qwert.indexOf(str[i])-1];
+				if (qwert[qwert.indexOf(str[i])-1] != "'")
+					outs+=qwert[qwert.indexOf(str[i])-1];
+				else
+					outs+=" ";
 			}
 			document.getElementById("out").value = outs;
 		}
