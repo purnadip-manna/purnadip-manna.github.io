@@ -5,14 +5,11 @@
 <body>
 	<script>
 		function qe(){
-			var alp = {'q':'e', 'w':'r', 'e':'t', 'r':'y', 't':'u', 'y':'i', 'u':'o', 'i':'p','o':'a', 'p':'s', 'a':'d', 's':'f', 'd':'g', 'f':'h', 'g':'j', 'h':'k', 'j':'l', 'k':'z', 'l':'x', 'z':'c', 'x':'v', 'c':'b', 'v':'n', 'b':'m', 'n':'q', 'm':'w'}
+			var qwert = "qwertyuiop[]\'asdfghjkl;'zxcvbnm,./"
 			var str = document.getElementById("in").value;
 			outs = "";
-			for(var i=0; i<str.length; i++){
-				if (alp[str[i]] in alp)
-					outs+=alp[str[i]];
-				else
-					outs+=str[i];
+			for(i=0; i<str.length; i++){
+				outs+=qwert[indexOf(str[i])];
 			}
 			document.getElementById("out").value = outs;
 		}
