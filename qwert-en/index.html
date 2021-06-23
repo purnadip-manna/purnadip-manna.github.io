@@ -7,6 +7,7 @@
 		function qe(){
 			var qwert = "'qwertyuiop[]\\'asdfghjkl;'zxcvbnm,./'1234567890-=' "
 			var str = document.getElementById("in").value;
+			str = str.toLowerCase();
 			outs = "";
 			for(i=0; i<str.length; i++){
 				if (str[i] == " ")
@@ -16,7 +17,7 @@
 				else
 					outs+=" INVALID ";
 			}
-			document.getElementById("out").value = outs;
+			document.getElementById("out").value = outs.toUpperCase();
 		}
 	</script>
 	*Give Input in lowercase: 
