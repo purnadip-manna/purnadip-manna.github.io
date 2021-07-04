@@ -270,3 +270,7 @@ nav{
     padding: 15px;
     border-radius: 10px;
 }
+a{
+	text-decoration: none;
+	color: cyan;
+}
