@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Index</title>
+
+
+
+
   </head>
   <body>
 	<nav class="navbar navbar-expand-lg fixed-top">
@@ -78,7 +82,7 @@
       <div id='stars2'></div>
       <div id='stars3'></div>
 	  <div class="container">
-		<div id="home">
+		<div id="home" onscroll="alert('Bal')">
 			<br>
 			<br>
 			<br>
@@ -93,7 +97,7 @@
 			<br>
 		</div>
 		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
-		<div id="about">
+		<div id="about" onscroll="markActive('op2')">
 			<br>
 			<br>
 			<br>
@@ -118,7 +122,7 @@
 		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
 		<div id='stars'></div>
       <div id='stars2'></div>
-		<div id="myskills">
+		<div id="myskills" onscroll="markActive('op3')">
 			<br>
 			<br>
 			<br>
@@ -200,7 +204,7 @@
 			<br>
 		</div>
 		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
-		<div id="project">
+		<div id="project" onscroll="markActive('op4')">
 			<br>
 			<br>
 			<br>
@@ -210,7 +214,7 @@
 			<br>
 		</div>
 		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
-		<div id="contact">
+		<div id="contact" onscroll="markActive('op5')">
 			<br>
 			<br>
 			<br>
@@ -240,10 +244,28 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   
     <script>
+
 	    function markActive(id){
 	    	$(".active").removeClass("active");
-		$("#"+id).addClass("active");
+			$("#"+id).addClass("active");
 	    }
+
+	   	$( "#home" ).hover(function() {
+		  markActive("op1");
+		});
+	    $( "#about" ).hover(function() {
+		  markActive("op2");
+		});
+		$( "#myskills" ).hover(function() {
+		  markActive("op3");
+		});
+		$( "#project" ).hover(function() {
+		  markActive("op4");
+		});
+		$( "#contact" ).hover(function() {
+		  markActive("op5");
+		});
+
     </script>
 	
 
