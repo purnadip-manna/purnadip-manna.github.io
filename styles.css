@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Rubik:wght@300&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
@@ -13,13 +15,18 @@ body {
     overflow-x: hidden;
 }
 
+#short-line{
+  font-family: 'Cookie', cursive;
+  font-size: 1.5rem;
+}
+
 #home{
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/img/bg.jpg);
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./img/bg.jpg);
 	background-size: cover;
 	padding-left: 6%;
 	padding-right: 5%;
 	width: 100%;
-    	height: 100vh;
+  height: 100vh;
 }
 
 nav{
@@ -282,4 +289,38 @@ a{
 
 div.h4 {
   line-height: 1rem;
+}
+
+.fixHeight{
+  height: 100%;
+}
+.heading{
+  color: #ffc107;
+}
+.subHeading{
+  color: #28a745;
+}
+.para{
+  text-align: center;
+  font-size: 1rem;
+  padding: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+
+  body{
+    font-family: sans-serif;
+  }
+
+  #home{
+    background-position-x: right;
+  }
+
+  #fixed-btn{
+    bottom: 20%;
+    position: absolute;
+  }
+  .btn{
+    font-size: 1.2rem;
+  }
 }
