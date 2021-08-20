@@ -4,13 +4,15 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+	
+	<!-- Typed JS -->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typed.js"></script>
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- Main CSS -->
     <link rel="stylesheet" href="styles.css">
     <title>Purnadip Manna</title>
   </head>
@@ -76,33 +78,27 @@
 	  </nav>
 	  
 		<div id="home">
-			<br>
-			<br>
-			<br>
+			<br><br><br>
 			<h1>Hello!</h1>
 			<h1>This is Purnadip Manna</h1>
-			<h1><span id="typed"></span></h1><br>
-			<a href="#contact"><button class="btn btn-lg"><span>Contact Me</span> </button></a>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
+			<h1><span id="typed"></span></h1><br><br>
+			<div id="fixed-btn">
+				<button class="btn btn-lg"><span>My CV</span> </button>
+				<a href="#contact"><button class="btn btn-lg"><span>Contact Me</span> </button></a>
+			</div>
+			<br><br><br><br><br>
 		</div>
 		<div class="container">
 		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
 		<div id="about" onscroll="markActive('op2')">
-			<br>
-			<br>
-			<br>
+			<br><br><br>
 			<div align="center">
-				<img style="border-radius: 50%; width: 25%;" src="/img/dp.jpg">
+				<img style="border-radius: 50%; width: 25%;" src="./img/dp.jpg">
 			</div>
 			<br>
 			<h1>About Me</h1>
-			<span style = "color: #b5a3ff;">Find out who I am, where I'm from and what I'm all about.</span>
-			<br>
-			<br>
+			<span id="short-line" style = "color: #b5a3ff;">Find out who I am, where I'm from and what I'm all about.</span>
+			<br><br>
 			<h2>Who am I?</h2>
 			<p>
 				My name is Purnadip Manna. I am a Web Developer (mainly Backend Developer). I am from Howrah, West Bengal, India.
@@ -118,18 +114,14 @@
 			<p>
 				I am very much interested in Machine Learning, Artificial Intelligence, NLP and IOT. I am still learning about these. Also I have interest in new Web Technologies.
 			</p>
-			<br>
-			<br>
-			<br>
+			<br><br><br>
 		</div>
 		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
-		<div id='stars'></div>
-      <div id='stars2'></div>
 		<div id="myskills" onscroll="markActive('op3')">
 			<br><br><br>
 
 			<h1>My Skills & Experience</h1>
-			<span style = "color: #b5a3ff;">Know about my Skills and Experience.</span>
+			<span id="short-line" style = "color: #b5a3ff;">Know about my Skills and Experience.</span>
 			<br><br>
 			<h2>Frontend</h2>
 			<br>
@@ -464,38 +456,41 @@
 			<br>
 
 			<h2> Industry Experience</h2>
-			<p>
-				<br>
-				<strong>Tutoraj</strong><br>
-				Technical Intern <br> (Web Developer)<br>
-				<span style="color: #8f8d8d;">Sep 2020 - Nov 2020</span><br>
-				Performed backend operations with Myphp login, performed SQL quires, worked
-				on tasks related to UI/UX development on live sites (<a href="https://k2box.online/" target="_blank">K2Box</a>, <a href="https://tutoraj.com/" target="_blank">Tutoraj</a>).
-				<br>
-				<br>
-				<strong>DM Jewellers</strong><br>
-				Web Developer<br>
-				<span style="color: #8f8d8d;">Mar 2021 - Apr 2021</span><br>
-				Created a Web software for storing the work details and also for automate some calculations related to their works.
-			</p>
 			<br>
-			<br>
+			<div class="row">
+
+			    <div class="col-xl-6 col-lg-6 mb-4">
+			      <div class="bg-dark rounded-lg p-4 shadow fixHeight">
+			        <h2 class="h3 font-weight-bold text-center mb-4 heading">Tutoraj</h2>
+			        <div class="h5 font-weight-bold text-center mb-4 subHeading">Technical Intern</div>
+			        <div style="color: #8f8d8d; font-size: 1rem; text-align: center;">(Web Developer)<br> Sep 2020 - Nov 2020</div>
+			        <div class="para">
+			        	Performed backend operations with Myphp login, performed SQL quires, worked
+						on tasks related to UI/UX development on live sites (<a href="https://k2box.online/" target="_blank">K2Box</a>, <a href="https://tutoraj.com/" target="_blank">Tutoraj</a>)
+			        </div>
+			      </div>
+			    </div>
+			    <div class="col-xl-6 col-lg-6 mb-4">
+			      <div class="bg-dark rounded-lg p-4 shadow fixHeight">
+			        <h2 class="h3 font-weight-bold text-center mb-4 heading">DM Jewellers</h2>
+			        <div class="h5 font-weight-bold text-center mb-4 subHeading">Web Developer</div>
+			        <div style="color: #8f8d8d; font-size: 1rem; text-align: center;">Mar 2021 - Apr 2021</div>
+			        <div class="para">
+			        	Created a Web software for storing the work details and also for automate some calculations related to their works.
+			        </div>
+			      </div>
+			    </div>
+			</div>
 		</div>
 		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
 		<div id="project" onscroll="markActive('op4')">
-			<br>
-			<br>
-			<br>
+			<br><br><br>
 			<h1>My Projects</h1>
-			<br>
-			<br>
-			<br>
+			<br><br><br>
 		</div>
 		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
 		<div id="contact" onscroll="markActive('op5')">
-			<br>
-			<br>
-			<br>
+			<br><br><br>
 			<h1>Contact Me</h1>
 			<br>
 			<div class="chart-window">
@@ -591,8 +586,7 @@
 
 		});
     </script>
-    <br>
-	<br>	
+    <br><br>	
 </body>
 <footer>
 	<hr style="background-color: #8f8d8d; width: 60%;">
