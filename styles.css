@@ -333,3 +333,13 @@ div.h4 {
 	width: 45%;
   }
 }
+
+#stars{
+    color: yellow;
+}
+
+@media only screen and (min-width: 600px) {
+  #stars{
+    padding-right: 1px;
+  }
+}
