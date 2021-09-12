@@ -31,8 +31,14 @@
 			<li class="nav-item">
 				<a class="nav-link" href="#about" id="op2" onclick="markActive('op2')">About Me</a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#myskills" id="op3" onclick="markActive('op3')">Skills</a>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="op3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Skills</a>
+				<div class="dropdown-menu" aria-labelledby="op3">
+		          <a class="dropdown-item" href="#frontend" onclick="markActive('op3')">Frontend</a>
+		          <a class="dropdown-item" href="#backend" onclick="markActive('op3')">Backend</a>
+		          <a class="dropdown-item" href="#others" onclick="markActive('op3')">Others</a>
+		          <a class="dropdown-item" href="#experience" onclick="markActive('op3')">Experience</a>
+		        </div>
 			</li>
 			<li class="nav-item">
 			  <a class="nav-link" href="#project" id="op4" onclick="markActive('op4')">Projects</a>
@@ -117,10 +123,10 @@
 			<br><br><br>
 		</div>
 		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
-		<div id="myskills" onscroll="markActive('op3')">
+		<div id="frontend" onscroll="markActive('op3')">
 			<br><br><br>
 
-			<h1>My Skills & Experience</h1>
+			<h1 id="myskills">My Skills & Experience</h1>
 			<span id="short-line" style = "color: #b5a3ff;">Know about my Skills and Experience.</span>
 			<br><br>
 			<h2>Frontend</h2>
@@ -205,6 +211,9 @@
 			      </div>
 			    </div>
 			</div>
+			<span id="backend"></span>
+			<br>
+			<br>
 			<br>
 			<h2>Backend</h2>
 			<br>
@@ -328,7 +337,9 @@
 			      </div>
 			    </div>
 			</div>
-
+			<span id="others"></span>
+			<br>
+			<br>
 			<br>
 			<h2>Others</h2>
 			<span class="badge badge-warning">Beginner</span>
@@ -443,21 +454,21 @@
 			        	<img src="./img/ex.png" width="30" height="30"> &nbsp; Express JS
 			         </div>
 			         <div class="row text-center mt-1">
-			        	<img src="./img/alexa.png" width="30" height="30"> &nbsp; Alexa Skill Kit
+			        	<img class="mt-1 ml-1" src="./img/alexa.png" width="26" height="26"> &nbsp; Alexa Skill Kit
 			         </div>
 			         <div class="row text-center mt-1">
-			        	<img src="./img/dg.png" width="30" height="30"> &nbsp; Dialogflow
+			        	<img class="mt-1 ml-1" src="./img/dg.png" width="26" height="26"> &nbsp; Dialogflow
 			         </div>
 				  </div>
 				</div>
 			</div>
-
+			<span id="experience"></span>
 			<br>
-
+			<br>
+			<br>
 			<h2> Industry Experience</h2>
 			<br>
 			<div class="row">
-
 			    <div class="col-xl-6 col-lg-6 mb-4">
 			      <div class="bg-dark rounded-lg p-4 shadow fixHeight">
 			        <h2 class="h3 font-weight-bold text-center mb-4 heading">Tutoraj</h2>
@@ -485,8 +496,69 @@
 		<div id="project" onscroll="markActive('op4')">
 			<br><br><br>
 			<h1>My Projects</h1>
-			<br><br><br>
+			<br>
+			<div class="row">
+			    <div class="col-xl-6 col-lg-6 mb-4">
+			      <div class="bg-dark rounded-lg p-4 shadow fixHeight">
+			        <h2 class="h3 font-weight-bold text-center mb-4 heading">Instant Grocery</h2>
+			        <div class="h5 font-weight-bold text-center mb-4 subHeading">(Web Application)</div>
+			        <div class="para">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			        </div>
+			      </div>
+			    </div>
+			    <div class="col-xl-6 col-lg-6 mb-4">
+			      <div class="bg-dark rounded-lg p-4 shadow fixHeight">
+			        <h2 class="h3 font-weight-bold text-center mb-4 heading">Password Locker</h2>
+			        <div class="h5 font-weight-bold text-center mb-4 subHeading">(Web Application)</div>
+			        <div class="para">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			        </div>
+			      </div>
+			    </div>
+			</div>
+			<div class="row">
+				<div class="col-xl-6 col-lg-6 mb-4">
+			      <div class="bg-dark rounded-lg p-4 shadow fixHeight">
+			        <h2 class="h3 font-weight-bold text-center mb-4 heading">MusicMan</h2>
+			        <div class="h5 font-weight-bold text-center mb-4 subHeading">(Discord Bot)</div>
+			        <div class="para">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			        </div>
+			      </div>
+			    </div>
+			    <div class="col-xl-6 col-lg-6 mb-4">
+			      <div class="bg-dark rounded-lg p-4 shadow fixHeight">
+			        <h2 class="h3 font-weight-bold text-center mb-4 heading">Home Automation</h2>
+			        <div class="h5 font-weight-bold text-center mb-4 subHeading">(NodeMUC)</div>
+			        <div class="para">
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			        	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			        	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			        	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			        	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			        	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			        </div>
+			      </div>
+			    </div>
+			</div>
 		</div>
+		<br>
 		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
 		<div id="contact" onscroll="markActive('op5')">
 			<br><br><br>
