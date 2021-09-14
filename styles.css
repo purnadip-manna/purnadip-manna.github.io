@@ -6,7 +6,7 @@ html {
 body {
     font-size: 1.25rem;
     line-height: 1.5;
-    background: #1B2735;
+    background-image: linear-gradient(0deg,#000,#160000),linear-gradient(180deg,rgba(0,0,0,.8),rgba(0,0,0,.8));
     display: block;
     min-width: 320px;
     font-family: "Rubik",sans-serif;
@@ -35,10 +35,8 @@ body {
 }
 
 nav{
-    background-color: rgba(0, 0, 0, 0.9);
-    border-bottom: 1px solid #9276ff;
+    background-color: rgba(7, 7, 7, 0.9);
     outline: 0;
-    box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);
 }
 .nav-item{
     position: relative;
@@ -343,4 +341,8 @@ div.h4 {
   #stars{
     padding-right: 1px;
   }
+}
+
+.bg-dark {
+    background-color: #1c1f22!important;
 }
