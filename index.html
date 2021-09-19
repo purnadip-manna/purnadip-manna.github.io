@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Main CSS -->
     <link rel="stylesheet" href="styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Purnadip Manna</title>
   </head>
   <body>
@@ -580,8 +582,6 @@
 			<br>
 			<div class="chart-window">
 				<div class="chart">
-
-					<form>
 					<label for="inputName">Name</label>
       				<input type="text" class="form-control" id="inputName" name="name" placeholder="Enter name">
 
@@ -594,10 +594,9 @@
 					<label for="inputMessage">Message</label>
       				<textarea class="form-control" id="inputMessage" name="message" rows="3" placeholder="Write something here..."></textarea>
       				<br>
-      				<span style="color: #8f8d8d;font-size: 17px;">Your form has been submitted!</span>
+      				<span style="color: #8f8d8d;font-size: 17px;" id="resText"></span>
       				<br>
-      				<p align="center"><button type="submit" class="btn btn-sm">Submit</button></p>
-      				</form>
+      				<p align="center"><button type="submit" class="btn btn-sm" id="submitbtn">Submit</button></p>
 
 				</div>
 			</div>
@@ -617,7 +616,6 @@
    	</script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   
@@ -670,6 +668,17 @@
 			  }
 
 		});
+
+		  $("#submitbtn").click(function(){
+		  	let name = document.getElementById('inputName').value;
+			let email = document.getElementById('inputEmail').value;
+			let sub = document.getElementById('inputSubject').value;
+			let msg = document.getElementById('inputMessage').value;
+		    $.ajax({type: "POST", url: "https://portfolio-contact.purnadip2702.repl.co", data: {"name" : name, "email" : email, "subject" : sub, "message" : msg}, success: function(result){
+		      $("#resText").html(result);
+		    }});
+		  });
+
     </script>
     <br><br>	
 </body>
