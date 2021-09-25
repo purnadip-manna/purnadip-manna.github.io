@@ -346,3 +346,27 @@ div.h4 {
 .bg-dark {
     background-color: #1c1f22!important;
 }
+
+#frontend{
+  display: none;
+}
+
+#backend{
+  display: none;
+}
+
+#others{
+  display: none;
+}
+
+#frontend:target{
+  display: block;
+}
+
+#backend:target{
+  display: block;
+}
+
+#others:target{
+  display: block;
+}
