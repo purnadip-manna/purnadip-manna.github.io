@@ -37,6 +37,7 @@ body {
 nav{
     background-color: rgba(7, 7, 7, 0.9);
     outline: 0;
+    height: 12%;
 }
 .nav-item{
     position: relative;
@@ -369,4 +370,27 @@ div.h4 {
 
 #others:target{
   display: block;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  color: cyan;
+  background-color: #1c1f22;
+  cursor: pointer;
+  padding: 18px;
+  width: -webkit-fill-available;
+  border: none;
+  text-align: center;
+  outline: none;
+  margin: 5px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.content {
+  margin: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
