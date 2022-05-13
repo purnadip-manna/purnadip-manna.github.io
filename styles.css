@@ -35,9 +35,9 @@ body {
 }
 
 nav{
+    padding: 20px !important;
     background-color: rgba(7, 7, 7, 0.9);
     outline: 0;
-    padding: 20px !important;
 }
 .nav-item{
     position: relative;
