@@ -20,43 +20,47 @@
     <title>Purnadip Manna</title>
   </head>
   <body>
-		<div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+	  <nav class="navbar" id="navbarId">
+		<div class="container">
+		  <div class="logo">
+			<a href="#"
+			><img src="./img/logo.png" width="150px;"></a>
+		  </div>
+		  <ul class="menu" id="menuId">
+			<li><a href="#home" onclick="hidemenu()">Home</a></li>
+			<li><a href="#about" onclick="hidemenu()">About Me</a></li>
+			<li><a href="#myskills" onclick="hidemenu()">Skills</a></li>
+			<li><a href="#project" onclick="hidemenu()">Projects</a></li>
+			<li><a href="#contact" onclick="hidemenu()">Contact Me</a></li>
+		  </ul>
+		  <div class="menu-btn" onclick="showmenu()">
+			<div class="menu-toggle">
+				<div class="one"></div>
+				<div class="two"></div>
+				<div class="three"></div>
+			</div>
+		  </div>
+		</div>
+	  </nav>
 
-      <label for="navi-toggle" class="navigation__button">
-          <span class="navigation__icon">&nbsp;</span>
-      </label>
-
-      <div class="navigation__background">&nbsp;</div>
-
-      <nav class="navigation__nav">
-          <ul class="navigation__list" id="navigation__list">
-              <li class="navigation__item"><a href="#home" class="navigation__link" onclick="document.getElementById('navi-toggle').click()">Home</a></li>
-              <li class="navigation__item"><a href="#about" class="navigation__link" onclick="document.getElementById('navi-toggle').click()">About Me</a></li>
-              <li class="navigation__item"><a href="#myskills" class="navigation__link" onclick="document.getElementById('navi-toggle').click()">Skills</a></li>
-              <li class="navigation__item"><a href="#project" class="navigation__link" onclick="document.getElementById('navi-toggle').click()">Projects</a></li>
-              <li class="navigation__item"><a href="#contact" class="navigation__link" onclick="document.getElementById('navi-toggle').click()">Contact</a></li>
-          </ul>
-      </nav>
-  	</div>
 	<div id="home">
 		<br>
-		<br>
-		<h2>Hello!</h2>
-		<h2>My name is </h2>
-		<h1 style="font-family: Verdana;"><b>Purnadip Manna</b></h1>
-		<h2><span id="typed"></span></h2><br><br>
-		<br><br><br><br>
-		<div id="fixed-btn">
-			<a href="./files/PurnadipManna_Resume.pdf" download><button class="btn btn-lg"><span>My CV</span> </button></a>
-			<a href="#contact"><button class="btn btn-lg"><span>Contact Me</span> </button></a>
+		<div class="container">
+			<h2>Hello!</h2>
+			<h2>My name is </h2>
+			<h1 style="font-family: Verdana;"><b>Purnadip Manna</b></h1>
+			<h2><span id="typed"></span></h2><br><br><br>
+			<div id="fixed-btn">
+				<a href="./files/PurnadipManna_Resume.pdf" download><button class="btn btn-lg"><span>My CV</span> </button></a>
+				<a href="#contact"><button class="btn btn-lg"><span>Contact Me</span> </button></a>
+			</div>
 		</div>
 	</div>
 
 	<div class="container">
 		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
 		<div id="about">
-			<br><br>
+			<br><br><br>
 			<div align="center">
 				<img id="profilePic" src="./img/dp.jpg">
 			</div>
@@ -84,7 +88,7 @@
 		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
 		
 		<div id="myskills">
-			<br><br>
+			<br><br><br>
 
 			<h1>My Skills & Experience</h1>
 			<span id="short-line" style = "color: #b5a3ff;">Know about my Skills and Experience.</span>
@@ -446,7 +450,7 @@
 		</div>
 		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
 		<div id="project">
-			<br><br>
+			<br><br><br>
 			<h1>My Projects</h1>
 			<br>
 			<button type="button" class="collapsible">Hackathon Projects</button>
@@ -593,7 +597,7 @@
 		</div>
 		<br>
 		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
-		<div id="contact"><br><br>
+		<div id="contact"><br><br><br>
 			<h1>Contact Me</h1>
 			<div class="row">
 				<div class="col-sm-6">
@@ -675,10 +679,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   
     <script>
-
 		var coll = document.getElementsByClassName("collapsible");
 		var i;
-
 		for (i = 0; i < coll.length; i++) {
 		  coll[i].addEventListener("click", function() {
 		    this.classList.toggle("active");
@@ -718,23 +720,36 @@
 
 		});
 
-			$("#navi-toggle").click(function() {
-				var navList = document.getElementById('navigation__list');
-				if(navList.style.display == "" || navList.style.display == "none")
-					navList.style.display = "block";
-				else
-					setTimeout(() => {navList.style.display = "none"}, 500);
-			});
-
-		  $("#submitbtn").click(function(){
-		  	let name = document.getElementById('inputName').value;
+		$("#submitbtn").click(function(){
+			let name = document.getElementById('inputName').value;
 				let email = document.getElementById('inputEmail').value;
 				let sub = document.getElementById('inputSubject').value;
 				let msg = document.getElementById('inputMessage').value;
-		    $.ajax({type: "POST", url: "https://portfolio-contact.purnadip2702.repl.co", data: {"name" : name, "email" : email, "subject" : sub, "message" : msg}, success: function(result){
-		      $("#resText").html(result);
-		    }});
-		  });
+			$.ajax({type: "POST", url: "https://portfolio-contact.purnadip2702.repl.co", data: {"name" : name, "email" : email, "subject" : sub, "message" : msg}, success: function(result){
+				$("#resText").html(result);
+			}});
+		});
+
+	
+		var navbar = document.getElementById("navbarId");
+		window.onscroll = function () {
+		if (window.pageYOffset > 80) {
+			navbar.classList.add("sticky");
+		} else {
+			navbar.classList.remove("sticky");
+		}
+		};
+
+		var navmenu = document.getElementById("menuId");
+		function showmenu() {
+			navmenu.classList.toggle("active");
+		}
+		function hidemenu(){
+			navmenu.classList.remove("active");
+		}
+		$(".menu-toggle").on('click', function() {
+			$(this).toggleClass("on");
+		});
 
     </script>
 </body>
