@@ -322,7 +322,7 @@ div.h4 {
   }
 
   #fixed-btn{
-    bottom: 20%;
+    bottom: 30%;
     position: absolute;
   }
   .btn{
@@ -442,7 +442,7 @@ div.h4 {
 }
 .navigation__list {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 45%;
   transform: translate(-50%, -50%);
   list-style: none;
@@ -457,6 +457,7 @@ div.h4 {
   width: 15rem;
   display: inline-block;
   font-weight: 600;
+  font-size: 2rem;
   padding: 1rem 2rem;
   color: #fff;
   text-decoration: none;
@@ -471,7 +472,7 @@ div.h4 {
 }
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
-  color: #9276ff;
+  color: #06171e;
   transform: translateX(1rem);
 }
 .navigation__checkbox:checked ~ .navigation__background {
