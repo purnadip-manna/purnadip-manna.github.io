@@ -20,72 +20,43 @@
     <title>Purnadip Manna</title>
   </head>
   <body>
-	<nav class="navbar navbar-expand-lg fixed-top">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-text-paragraph" viewBox="0 0 16 16" style="color: #b5a3ff;">
-				<path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5z"/>
-			  </svg>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-		  <ul class="navbar-nav mr-auto">
-			<li class="nav-item">
-			  <a class="nav-link active" href="#home" id="op1" onclick="markActive('op1')">Home <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#about" id="op2" onclick="markActive('op2')">About Me</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#myskills" id="op3" onclick="markActive('op2')">Skills</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#project" id="op4" onclick="markActive('op4')">Projects</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#contact" id="op5" onclick="markActive('op5')">Contact</a>
-			</li>
-		  </ul>
-		</div>
-		<!-- Social Icons -->
-			<span class="nav-link mr-md-2 soc"><li><a class="icon-13 github" href="https://github.com/purnadip-manna" title="GitHub" target="_blank">
-			<div class="ir">
-			  <svg viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
-				<path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"></path>
-			  </svg>
-			</div></a>
-			</li></span>
-			<span class="nav-link mr-md-2 soc"><li><a class="icon-8 email" href="mailto:purnadipmanna2702@gmail.com" title="Gmail">
-			<div class="ir">
-			  <svg viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
-				<path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"></path>
-			  </svg>
-			</div></a>
-			</li></span>
+		<div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-			<span class="nav-link mr-md-2 soc"><li><a class="icon-17 linkedin" href="https://www.linkedin.com/in/purnadip-manna/" title="LinkedIn" target="_blank">
-			<div class="ir">
-			  <svg viewBox="0 0 512 512"><path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/></svg>
-			</div></a>
-			</li></span>
-	
-		  <!-- Social Icons -->
-	</nav>
-	  
+      <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+          <ul class="navigation__list" id="navigation__list">
+              <li class="navigation__item"><a href="#home" class="navigation__link" onclick="document.getElementById('navi-toggle').click()">Home</a></li>
+              <li class="navigation__item"><a href="#about" class="navigation__link" onclick="document.getElementById('navi-toggle').click()">About Me</a></li>
+              <li class="navigation__item"><a href="#myskills" class="navigation__link" onclick="document.getElementById('navi-toggle').click()">Skills</a></li>
+              <li class="navigation__item"><a href="#project" class="navigation__link" onclick="document.getElementById('navi-toggle').click()">Projects</a></li>
+              <li class="navigation__item"><a href="#contact" class="navigation__link" onclick="document.getElementById('navi-toggle').click()">Contact</a></li>
+          </ul>
+      </nav>
+  	</div>
 	<div id="home">
-		<br><br><br>
-		<h1>Hello!</h1>
-		<h1>This is Purnadip Manna</h1>
-		<h1><span id="typed"></span></h1><br><br>
+		<br>
+		<br>
+		<h2>Hello!</h2>
+		<h2>My name is </h2>
+		<h1><b>Purnadip Manna</b></h1>
+		<h2><span id="typed"></span></h2><br><br>
+		<br><br><br><br>
 		<div id="fixed-btn">
 			<a href="./files/PurnadipManna_Resume.pdf" download><button class="btn btn-lg"><span>My CV</span> </button></a>
 			<a href="#contact"><button class="btn btn-lg"><span>Contact Me</span> </button></a>
 		</div>
-		<br><br><br><br><br>
 	</div>
 
 	<div class="container">
 		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
-		<div id="about" onscroll="markActive('op2')">
-			<br><br><br>
+		<div id="about">
+			<br><br>
 			<div align="center">
 				<img id="profilePic" src="./img/dp.jpg">
 			</div>
@@ -112,8 +83,8 @@
 		</div>
 		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
 		
-		<div id="myskills" onscroll="markActive('op3')">
-			<br><br><br>
+		<div id="myskills">
+			<br><br>
 
 			<h1>My Skills & Experience</h1>
 			<span id="short-line" style = "color: #b5a3ff;">Know about my Skills and Experience.</span>
@@ -474,8 +445,8 @@
 			</div>
 		</div>
 		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
-		<div id="project" onscroll="markActive('op4')">
-			<br><br><br>
+		<div id="project">
+			<br><br>
 			<h1>My Projects</h1>
 			<br>
 			<button type="button" class="collapsible">Hackathon Projects</button>
@@ -622,28 +593,66 @@
 		</div>
 		<br>
 		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
-		<div id="contact" onscroll="markActive('op5')">
-			<br><br><br>
+		<div id="contact"><br><br>
 			<h1>Contact Me</h1>
-			<br>
-			<div class="chart-window">
-				<div class="chart">
-					<label for="inputName">Name</label>
-      				<input type="text" class="form-control" id="inputName" name="name" placeholder="Enter name">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="chart-window">
+						<div class="chart">
+							<label for="inputName">Name</label>
+		      				<input type="text" class="form-control" id="inputName" name="name" placeholder="Enter name">
 
-					<label for="inputEmail">Email</label>
-      				<input type="email" class="form-control" id="inputEmail" name="email" placeholder="name@example.com">
-					
-					<label for="inputSubject">Subject</label>
-      				<input type="text" class="form-control" id="inputSubject" name="subject" placeholder="Enter Subject">
-					
-					<label for="inputMessage">Message</label>
-      				<textarea class="form-control" id="inputMessage" name="message" rows="3" placeholder="Write something here..."></textarea>
-      				<br>
-      				<span style="color: #8f8d8d;font-size: 17px;" id="resText"></span>
-      				<br>
-      				<p align="center"><button type="submit" class="btn btn-sm" id="submitbtn">Submit</button></p>
+							<label for="inputEmail">Email</label>
+		      				<input type="email" class="form-control" id="inputEmail" name="email" placeholder="name@example.com">
+							
+							<label for="inputSubject">Subject</label>
+		      				<input type="text" class="form-control" id="inputSubject" name="subject" placeholder="Enter Subject">
+							
+							<label for="inputMessage">Message</label>
+		      				<textarea class="form-control" id="inputMessage" name="message" rows="3" placeholder="Write something here..."></textarea>
+		      				<br>
+		      				<button type="submit" class="btn btn-sm" id="submitbtn">Submit</button><br>
+		      				<span style="color: #8f8d8d;font-size: 17px;" id="resText"></span>
+		      				<br>
+		      				<br>
 
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<p align="center">
+						<img src="./img/logo.png" style="width: 20rem;">
+					</p>
+						<div class="wrapper">
+							<!-- Social Icons -->
+							<span class="nav-link soc">
+								<li><a class="icon-13 github" href="https://github.com/purnadip-manna" title="GitHub" target="_blank">
+								<div class="ir">
+								  <svg viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+									<path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"></path>
+								  </svg>
+								</div></a>
+								</li>
+							</span>
+
+							<span class="nav-link soc"><li><a class="icon-8 email" href="mailto:purnadipmanna2702@gmail.com" title="Gmail">
+								<div class="ir">
+								  <svg viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+									<path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"></path>
+								  </svg>
+								</div></a>
+								</li>
+							</span>
+
+							<span class="nav-link soc"><li><a class="icon-17 linkedin" href="https://www.linkedin.com/in/purnadip-manna/" title="LinkedIn" target="_blank">
+								<div class="ir">
+								  <svg viewBox="0 0 512 512"><path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/></svg>
+								</div></a>
+								</li>
+							</span>
+					
+						  <!-- Social Icons -->
+						</div>
 				</div>
 			</div>
 		</div>      
@@ -667,45 +676,20 @@
   
     <script>
 
-var coll = document.getElementsByClassName("collapsible");
-var i;
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-
-
-	    function markActive(id){
-	    	$(".active").removeClass("active");
-			$("#"+id).addClass("active");
-	    }
-
-	   	$( "#home" ).hover(function() {
-		  markActive("op1");
-		});
-	    $( "#about" ).hover(function() {
-		  markActive("op2");
-		});
-		$( "#myskills" ).hover(function() {
-		  markActive("op3");
-		});
-		$( "#experience" ).hover(function() {
-		  markActive("op3");
-		});
-		$( "#project" ).hover(function() {
-		  markActive("op4");
-		});
-		$( "#contact" ).hover(function() {
-		  markActive("op5");
-		});
+		for (i = 0; i < coll.length; i++) {
+		  coll[i].addEventListener("click", function() {
+		    this.classList.toggle("active");
+		    var content = this.nextElementSibling;
+		    if (content.style.maxHeight){
+		      content.style.maxHeight = null;
+		    } else {
+		      content.style.maxHeight = content.scrollHeight + "px";
+		    }
+		  });
+		}
 
 
 		$(function() {
@@ -734,18 +718,25 @@ for (i = 0; i < coll.length; i++) {
 
 		});
 
+			$("#navi-toggle").click(function() {
+				var navList = document.getElementById('navigation__list');
+				if(navList.style.display == "" || navList.style.display == "none")
+					navList.style.display = "block";
+				else
+					setTimeout(() => {navList.style.display = "none"}, 500);
+			});
+
 		  $("#submitbtn").click(function(){
 		  	let name = document.getElementById('inputName').value;
-			let email = document.getElementById('inputEmail').value;
-			let sub = document.getElementById('inputSubject').value;
-			let msg = document.getElementById('inputMessage').value;
+				let email = document.getElementById('inputEmail').value;
+				let sub = document.getElementById('inputSubject').value;
+				let msg = document.getElementById('inputMessage').value;
 		    $.ajax({type: "POST", url: "https://portfolio-contact.purnadip2702.repl.co", data: {"name" : name, "email" : email, "subject" : sub, "message" : msg}, success: function(result){
 		      $("#resText").html(result);
 		    }});
 		  });
 
     </script>
-    <br><br>	
 </body>
 <footer>
 	<hr style="background-color: #8f8d8d; width: 60%;">
