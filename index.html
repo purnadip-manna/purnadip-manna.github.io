@@ -746,6 +746,7 @@
 		}
 		function hidemenu(){
 			navmenu.classList.remove("active");
+			$(".menu-toggle").toggleClass("on");
 		}
 		$(".menu-toggle").on('click', function() {
 			$(this).toggleClass("on");
