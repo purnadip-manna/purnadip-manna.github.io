@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Rubik:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    background-image: linear-gradient(0deg,#000,#160000),linear-gradient(180deg,rgba(0,0,0,.8),rgba(0,0,0,.8));
+    display: block;
+    min-width: 320px;
+    font-family: "Rubik",sans-serif;
+    color: #fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#profilePic{
+	border-radius: 50%;
+	width: 25%;
+}
+
+#short-line{
+  font-family: 'Cookie', cursive;
+  font-size: 1.5rem;
+}
+
+#home{
+  padding-top: 6rem;
+	background-image: linear-gradient(rgb(0 0 0 / 50%),rgb(0 0 0 / 45%)),url(../img/bg.jpg);
+	background-size: cover;
+	width: 100%;
+  height: 100vh;
+}
+
+.ir {
+    display: block;
+    overflow: visible;
+    padding: 0 0 100%;
+    position: relative;
+    height: 0;
+    width: 100%;
+}
+
+.ir > * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.soc {
+    display: inline-block;
+    list-style: none;
+    margin: 5px;
+    max-width: 100%;
+}
+.soc a, .soc svg {
+    display: block;
+}
+.soc a {
+    position: relative;
+    height: 50px;
+    width: 50px;
+
+}
+.icon-8:hover, .icon-13:hover, .icon-15:hover, .icon-17:hover,.icon-28:hover {
+    border-radius: 100%;
+    color: #0e1a25;
+    fill: #0e1a25;
+    -webkit-transform: scale(1.25);
+        transform: scale(1.25);
+    -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+    transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+    transition: background-color 0.5s, transform 0.5s ease-out;
+    transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+.icon-8 {
+    color: #6ed926;
+    fill: #6ed926;
+}
+.icon-8:hover {
+    background: #6ed926;
+}
+
+.icon-13 {
+    color: #26d991;
+    fill: #26d991;
+}
+.icon-13:hover {
+    background: #26d991;
+}
+
+.icon-15 {
+    color: #26d9d9;
+    fill: #26d9d9;
+}
+.icon-15:hover {
+    background: #26d9d9;
+}
+
+.icon-17 {
+    color: #2691d9;
+    fill: #2691d9;
+}
+.icon-17:hover {
+    background: #2691d9;
+}
+
+.icon-28 {
+    color: #d9266e;
+    fill: #d9266e;
+}
+.icon-28:hover {
+    background: #d9266e;
+}
+
+@media only screen and (min-width: 750px){
+    h1 {
+        font-size: 4.5rem;
+    }
+}
+
+.btn {
+    background: transparent;
+    border: 2px solid cyan;
+    color: cyan;
+    font-size: 1.5rem;
+    font-weight: 100;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    position: relative;
+    text-decoration: none;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+  }
+  .btn::after {
+    background-color: cyan;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+  }
+  .btn:hover::after {
+    transform: translate(0, 0);
+  }
+  .btn:hover {
+    border: 2px solid transparent;
+    color: black;
+    transform: scale(1.05);
+    will-change: transform;
+  }
+
+a{
+	text-decoration: none;
+	color: cyan;
+}
+
+
+.progress {
+  width: 150px;
+  height: 150px;
+  background: none;
+  position: relative;
+}
+
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px solid #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress>span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 6px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+}
+
+.progress .progress-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.rounded-lg {
+  border-radius: 1rem;
+}
+
+.text-gray {
+  color: #aaa;
+}
+
+div.h4 {
+  line-height: 1rem;
+}
+
+.fixHeight{
+  height: 100%;
+}
+.heading{
+  color: #ffc107;
+}
+.subHeading{
+  color: #28a745;
+}
+.para{
+  text-align: center;
+  font-size: 1rem;
+  padding: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+
+  body{
+    font-family: sans-serif;
+  }
+
+  #home{
+    background-position-x: right;
+  }
+
+  #fixed-btn{
+    bottom: 15%;
+    position: absolute;
+  }
+  .btn{
+    font-size: 1rem;
+  }
+  #profilePic{
+	border-radius: 50%;
+	width: 45%;
+  }
+}
+
+#stars{
+    color: yellow;
+}
+
+@media only screen and (min-width: 600px) {
+  #stars{
+    padding-right: 1px;
+  }
+}
+
+.bg-dark {
+    background-color: #1c1f22!important;
+}
+
+#frontend{
+  display: none;
+}
+
+#backend{
+  display: none;
+}
+
+#others{
+  display: none;
+}
+
+#frontend:target{
+  display: block;
+}
+
+#backend:target{
+  display: block;
+}
+
+#others:target{
+  display: block;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  color: cyan;
+  background-color: #1c1f22;
+  cursor: pointer;
+  padding: 18px;
+  width: -webkit-fill-available;
+  border: none;
+  text-align: center;
+  outline: none;
+  margin: 5px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.content {
+  margin: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+#logo{
+    margin-top: -5px;
+    border-bottom: 2px solid #2c0aac;
+    border-radius: 5px;
+    padding-bottom: 8px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* navbar styling */
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 8px 0px;
+  z-index: 2000;
+  background-color: rgba(7, 7, 7, 0.18);
+  transition: all 0.4s ease;
+}
+.navbar.sticky {
+  padding: 8px 0px;
+  background-color: #5f4c4c;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.navbar .logo a span {
+  color: #b5a3ff;
+  transition: 0.3s ease;
+}
+.navbar.sticky .logo a span {
+  color: white;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.navbar .menu li a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  position: relative;
+}
+.navbar .menu li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #ffd501;
+  display: block;
+  margin: 1px auto;
+  transition: all 0.3s ease;
+}
+.navbar .menu li a:hover::after {
+  width: 100%;
+}
+.menu-btn {
+  color: white;
+  font-size: 23px;
+  display: none;
+}
+
+@media (max-width: 961px) {
+  .navbar .menu {
+    background: 	#5f4c4c;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -200%;
+    top: 0px;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+  .navbar .menu.active {
+    left: 0%;
+  }
+  .navbar .menu li {
+    display: block;
+  }
+  .navbar .menu li a {
+    display: inline-block;
+    padding: 20px 0px;
+  }
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+}
+@media (max-width: 661px) {
+  .navbar .logo a {
+    font-size: 30px;
+  }
+}
+
+.menu-toggle {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 12px;
+  right: 25px;
+  cursor: pointer;
+}
+.menu-toggle.on .one {
+  -moz-transform: rotate(45deg) translate(7px, 7px);
+  -ms-transform: rotate(45deg) translate(7px, 7px);
+  -webkit-transform: rotate(45deg) translate(7px, 7px);
+  transform: rotate(45deg) translate(7px, 7px);
+}
+.menu-toggle.on .two {
+  opacity: 0;
+}
+.menu-toggle.on .three {
+  -moz-transform: rotate(-45deg) translate(8px, -10px);
+  -ms-transform: rotate(-45deg) translate(8px, -10px);
+  -webkit-transform: rotate(-45deg) translate(8px, -10px);
+  transform: rotate(-45deg) translate(8px, -10px);
+}
+
+.one,
+.two,
+.three {
+  width: 100%;
+  height: 5px;
+  background: white;
+  margin: 6px auto;
+  backface-visibility: hidden;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+ul{
+  margin-top: auto !important;
+}
+
+.mdbadge{
+  padding: 5px;
+  border-radius: 12px 12px 12px 12px;
+}
