@@ -44,7 +44,7 @@ $("#submitbtn").click(function(){
 		let email = document.getElementById('inputEmail').value;
 		let sub = document.getElementById('inputSubject').value;
 		let msg = document.getElementById('inputMessage').value;
-	$.ajax({type: "POST", url: "https://portfolio-contact.purnadip2702.repl.co", data: {"name" : name, "email" : email, "subject" : sub, "message" : msg}, success: function(result){
+	$.ajax({type: "POST", url: "https://purnadip-manna.purnadip2702.repl.co/submit", data: {"name" : name, "email" : email, "subject" : sub, "message" : msg}, success: function(result){
 		$("#resText").html(result);
 	}});
 });
