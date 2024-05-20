@@ -1,607 +1,576 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta property="og:title" content="Purnadip Manna" />
-    <meta name="description" content="Hello! This is Purnadip Manna" />	
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
-    <!-- Typed JS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typed.js"></script>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
     <title>Purnadip Manna</title>
   </head>
   <body>
-	  <nav class="navbar" id="navbarId">
-		<div class="container">
-		  <div class="logo">
-			<a href="#"
-			><img src="./img/android-chrome-512x512.png" width="50px;"></a>
-		  </div>
-		  <ul class="menu" id="menuId">
-			<li><a href="#home" onclick="hidemenu()">Home</a></li>
-			<li><a href="#about" onclick="hidemenu()">About Me</a></li>
-			<li><a href="#myskills" onclick="hidemenu()">Skills</a></li>
-			<li><a href="#project" onclick="hidemenu()">Projects</a></li>
-			<li><a href="#contact" onclick="hidemenu()">Contact Me</a></li>
-		  </ul>
-		  <div class="menu-btn" onclick="showmenu()">
-			<div class="menu-toggle">
-				<div class="one"></div>
-				<div class="two"></div>
-				<div class="three"></div>
-			</div>
-		  </div>
-		</div>
-	  </nav>
+    <div class="root">
+      <nav class="navbar sticky-top navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img/android-chrome-512x512.png" alt="PM" class="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+          </button>
 
-	<div id="home">
-		<br>
-		<div class="container">
-			<h2>Hello!</h2>
-			<h2>My name is </h2>
-			<h1 style="font-family: Verdana;"><b>Purnadip Manna</b></h1>
-			<h2><span id="typed"></span></h2><br><br><br>
-			<div id="fixed-btn">
-				<a href="https://drive.google.com/file/d/128OoookY61NQvZ2Tkv9WMsQ29ppZyyUU/view?usp=sharing" target="_blank">
-				<button class="btn btn-lg">
-					<span>
-						Resume
-						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-person mt-1" viewBox="0 0 16 16">
-						  <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-						  <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z"/>
-						</svg>
-					</span>
-				</button>
-				</a>
-				<a href="#contact"><button class="btn btn-lg">
-					<span>
-						Contact Me
-						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-						  <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-						  <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
-						</svg>
-					</span> 
-				</button></a>
-			</div>
-		</div>
-	</div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
 
-	<div class="container">
-		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
-		<div id="about">
-			<br><br><br><br>
-			<div align="center">
-				<img id="profilePic" src="./img/dp.jpg">
-			</div>
-			<br>
-			<h1>About Me</h1>
-			<span id="short-line" style = "color: #b5a3ff;">Find out who I am, where I'm from and what I'm all about.</span>
-			<br><br>
-			<h2>Who am I?</h2>
-			<p>
-				My name is Purnadip Manna. I am a Web Developer (mainly Backend Developer). I am from Howrah, West Bengal, India.
-				During the day I’m a student at Techno International New Town. During the evenings I spend my time working on freelance projects and building my own projects.
-			</p>
-			<br>
-			<h2>Why Work With Me?</h2>
-			<p>
-				I am a hardworking person and have a good knowledge on web development. All the time I want to gather more knowledge and more experience. So I try my best for all the time.
-			</p>
-			<br>
-			<h2>What is my interest?</h2>
-			<p>
-				I am very much interested in Machine Learning, Artificial Intelligence, NLP and IOT. I am still learning about these. Also I have interest in new Web Technologies.
-			</p>
-			<br><br><br>
-		</div>
-		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
-		
-		<div id="myskills">
-			<br><br><br><br>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
 
-			<h1>My Skills & Experience</h1>
-			<span id="short-line" style = "color: #b5a3ff;">Know about my Skills and Experience.</span>
-			<br><br>
-			<button type="button" class="collapsible">Frontend</button>
-			<div class="content">
-				<div class="row">
-					<div class="col-xl-3 col-lg-6 mb-4">
-					<div class="bg-dark rounded-lg p-5 shadow" style="height: 100%;">
-						<h2 class="h6 font-weight-bold text-center mb-4">HTML</h2>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
 
-						<!-- Progress bar 1 -->
-						<div class="progress mx-auto" data-value='85'>
-						<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-						</span>
-						<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-						</span>
-						<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-							<div class="h2 font-weight-bold">85<sup class="small">%</sup></div>
-						</div>
-						</div>
-						<!-- END -->
-					</div>
-					</div>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="mycontainer" id="home">
+        <div class="container d-md-flex">
+          <div class="left">
+            <div class="h2">
+              Hello! I'm Purnadip, a Software Engineer based in Kolkata, India.
+            </div>
+            <br />
+            <div class="description">
+              I'm a passionate software engineer with a love for building
+              applications from the ground up. I thrive on designing robust and
+              scalable application architectures, ensuring efficiency and
+              maintainability. Always exploring new technologies, particularly
+              interested in AI.
+            </div>
+            <div class="mt-5">
+              <a
+                href="https://www.linkedin.com/in/purnadip-manna/"
+                target="_blank"
+              >
+                <button type="button" class="btn btn-dark">
+                  View LinkedIn
+                </button>
+              </a>
+              &nbsp;
+              <a href="https://github.com/purnadip-manna" target="_blank">
+                <button type="button" class="btn btn-light">View Github</button>
+              </a>
+            </div>
+          </div>
+          <div class="right">
+            <img
+              src="img/20230807_140625.jpg"
+              alt="photo"
+              id="profilePicture"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="mycontainer" id="about">
+        <br /><br /><br />
+        <div class="h2 text-center">About</div>
+        <div class="description">
+          <div class="h5 mt-4">Who am I?</div>
+          <div class="text-justify">
+            My name is Purnadip Manna. I am a Software Engineer at GeoTech
+            Infoservices Private Limited. I am from Howrah, West Bengal, India.
+            I have completed my B.Tech (in Computer Science & Engineering) in
+            2023 from Techno International New Town, Kolkata.
+          </div>
+          <div class="h5 mt-4">Why work with me?</div>
+          <div class="text-justify">
+            I'm a software engineer who loves bringing ideas to life by building
+            applications from scratch. I find it rewarding to design strong
+            foundations for these applications, making them efficient and
+            adaptable as they grow. I write clear, well-organized code that's
+            easy for everyone to understand, including myself and my teammates.
+            Collaboration is key for me; I enjoy working together to solve
+            problems and create something amazing.
+          </div>
+          <div class="h5 mt-4">What is my interest?</div>
+          <div class="text-justify">
+            I am interested in various kinds of architecture of Microservices.
+            Apart from this, upcoming new technologies like Generative AI
+            fascinates me a lot.
+          </div>
+        </div>
+      </div>
+      <div class="mycontainer" id="experience">
+        <br /><br /><br />
+        <div class="h2 text-center">Experience</div>
+        <div class="timeline_area section_padding_130 mt-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <!-- Timeline Area-->
+                <div class="apland-timeline-area">
+                  <!-- Single Timeline Content-->
+                  <div class="single-timeline-area">
+                    <div
+                      class="timeline-date wow fadeInLeft"
+                      data-wow-delay="0.1s"
+                      style="
+                        visibility: visible;
+                        animation-delay: 0.1s;
+                        animation-name: fadeInLeft;
+                      "
+                    >
+                      <p>2023 - 2024</p>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div
+                          class="single-timeline-content d-flex wow fadeInLeft"
+                          data-wow-delay="0.3s"
+                          style="
+                            visibility: visible;
+                            animation-delay: 0.3s;
+                            animation-name: fadeInLeft;
+                          "
+                        >
+                          <div class="timeline-icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-suitcase-lg"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M5 2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2h3.5A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5H14a.5.5 0 0 1-1 0H3a.5.5 0 0 1-1 0h-.5A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2zm1 0h4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1M1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5H3V3zM15 12.5v-9a.5.5 0 0 0-.5-.5H13v10h1.5a.5.5 0 0 0 .5-.5m-3 .5V3H4v10z"
+                              />
+                            </svg>
+                          </div>
+                          <div class="timeline-text">
+                            <h6>Software Engineer</h6>
+                            <p>
+                              GeoTech Infoservices Pvt Ltd. (Kolkata, India)
+                            </p>
+                            <p class="fst-italic fw-lighter">
+                              Apr 2024 - Present
+                            </p>
+                            <div class="used-skills">
+                              <span class="badge rounded-pill bg-secondary"
+                                >Microservice</span
+                              >
+                              <span class="badge rounded-pill bg-secondary"
+                                >GRPC</span
+                              >
+                              <span class="badge rounded-pill bg-secondary"
+                                >Rabbit MQ</span
+                              >
+                              <span class="badge rounded-pill bg-secondary"
+                                >REST API</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div
+                          class="single-timeline-content d-flex wow fadeInLeft"
+                          data-wow-delay="0.5s"
+                          style="
+                            visibility: visible;
+                            animation-delay: 0.5s;
+                            animation-name: fadeInLeft;
+                          "
+                        >
+                          <div class="timeline-icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-briefcase"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"
+                              />
+                            </svg>
+                          </div>
+                          <div class="timeline-text">
+                            <h6>Software Engineer Trainee</h6>
+                            <p>
+                              GeoTech Infoservices Pvt Ltd. (Kolkata, India)
+                            </p>
+                            <p class="fst-italic fw-lighter">
+                              Jun 2023 - Apr 2024
+                            </p>
+                            <div class="used-skills">
+                              <span class="badge rounded-pill bg-secondary"
+                                >Angular</span
+                              >
+                              <span class="badge rounded-pill bg-secondary"
+                                >MongoDB</span
+                              >
+                              <span class="badge rounded-pill bg-secondary"
+                                >SpringBoot</span
+                              >
+                              <span class="badge rounded-pill bg-secondary"
+                                >React</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div
+                          class="single-timeline-content d-flex wow fadeInLeft"
+                          data-wow-delay="0.7s"
+                          style="
+                            visibility: visible;
+                            animation-delay: 0.7s;
+                            animation-name: fadeInLeft;
+                          "
+                        >
+                          <div class="timeline-icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-suitcase2"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M6.5 0a.5.5 0 0 0-.5.5V3H5a2 2 0 0 0-2 2v8a2 2 0 0 0 1.031 1.75A1.003 1.003 0 0 0 5 16a1 1 0 0 0 1-1h4a1 1 0 1 0 1.969-.25A2 2 0 0 0 13 13V5a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-.5-.5zM9 3H7V1h2zm3 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7h8zM5 4h6a1 1 0 0 1 1 1v1H4V5a1 1 0 0 1 1-1"
+                              />
+                            </svg>
+                          </div>
+                          <div class="timeline-text">
+                            <h6>Software Engineer Intern</h6>
+                            <p>
+                              GeoTech Infoservices Pvt Ltd. (Kolkata, India)
+                            </p>
+                            <p class="fst-italic fw-lighter">
+                              Jan 2023 - Jun 2023
+                            </p>
+                            <div class="used-skills">
+                              <span class="badge rounded-pill bg-secondary"
+                                >Java</span
+                              >
+                              <span class="badge rounded-pill bg-secondary"
+                                >SpringBoot</span
+                              >
+                              <span class="badge rounded-pill bg-secondary"
+                                >React</span
+                              >
+                              <span class="badge rounded-pill bg-secondary"
+                                >AWS</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Single Timeline Content-->
+                  <div class="single-timeline-area">
+                    <div
+                      class="timeline-date wow fadeInLeft"
+                      data-wow-delay="0.1s"
+                      style="
+                        visibility: visible;
+                        animation-delay: 0.1s;
+                        animation-name: fadeInLeft;
+                      "
+                    >
+                      <p>2022</p>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div
+                          class="single-timeline-content d-flex wow fadeInLeft"
+                          data-wow-delay="0.3s"
+                          style="
+                            visibility: visible;
+                            animation-delay: 0.3s;
+                            animation-name: fadeInLeft;
+                          "
+                        >
+                          <div class="timeline-icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-braces-asterisk"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M1.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C2.25 2 1.49 2.759 1.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6M14.886 7.9v.164c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456v-1.3c-1.114 0-1.49-.362-1.49-1.456V4.352C14.51 2.759 13.75 2 12.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6M7.5 11.5V9.207l-1.621 1.621-.707-.707L6.792 8.5H4.5v-1h2.293L5.172 5.879l.707-.707L7.5 6.792V4.5h1v2.293l1.621-1.621.707.707L9.208 7.5H11.5v1H9.207l1.621 1.621-.707.707L8.5 9.208V11.5z"
+                              />
+                            </svg>
+                          </div>
+                          <div class="timeline-text">
+                            <h6>Backend Developer</h6>
+                            <p>SwiftSku (California, United States) [Remote]</p>
+                            <p class="fst-italic fw-lighter">
+                              Jul 2022 - Sep 2022
+                            </p>
+                            <div class="used-skills">
+                              <span class="badge rounded-pill bg-secondary"
+                                >Python</span
+                              >
+                              <span class="badge rounded-pill bg-secondary"
+                                >Fast API</span
+                              >
+                              <span class="badge rounded-pill bg-secondary"
+                                >Salesforce API</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Single Timeline Content-->
+                  <div class="single-timeline-area">
+                    <div
+                      class="timeline-date wow fadeInLeft"
+                      data-wow-delay="0.1s"
+                      style="
+                        visibility: visible;
+                        animation-delay: 0.1s;
+                        animation-name: fadeInLeft;
+                      "
+                    >
+                      <p>2020</p>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div
+                          class="single-timeline-content d-flex wow fadeInLeft"
+                          data-wow-delay="0.3s"
+                          style="
+                            visibility: visible;
+                            animation-delay: 0.3s;
+                            animation-name: fadeInLeft;
+                          "
+                        >
+                          <div class="timeline-icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-code-slash"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"
+                              />
+                            </svg>
+                          </div>
+                          <div class="timeline-text">
+                            <h6>Technical Intern</h6>
+                            <p>Tutoraj (Tamil Nadu, India) [Remote]</p>
+                            <p class="fst-italic fw-lighter">
+                              Sep 2020 - Nov 2020
+                            </p>
+                            <div class="used-skills">
+                              <span class="badge rounded-pill bg-secondary"
+                                >PHP</span
+                              >
+                              <span class="badge rounded-pill bg-secondary"
+                                >MySQL</span
+                              >
+                              <span class="badge rounded-pill bg-secondary"
+                                >WordPress</span
+                              >
+                              <span class="badge rounded-pill bg-secondary"
+                                >JS</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mycontainer" id="projects">
+        <br /><br /><br />
+        <div class="h2 text-center">Projects</div>
+        <div class="description"></div>
+      </div>
+      <div class="mycontainer" id="contact">
+        <br /><br /><br />
+        <div class="h2 text-center">Contact</div>
+        <div class="description d-md-flex">
+          <div class="left p-4 text-start">
+            <label for="inputName">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputName"
+              name="name"
+              placeholder="Enter name"
+            />
 
-					<div class="col-xl-3 col-lg-6 mb-4">
-					<div class="bg-dark rounded-lg p-5 shadow" style="height: 100%;">
-						<h2 class="h6 font-weight-bold text-center mb-4">CSS</h2>
+            <label for="inputEmail">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail"
+              name="email"
+              placeholder="name@example.com"
+            />
 
-						<!-- Progress bar 2 -->
-						<div class="progress mx-auto" data-value='50'>
-						<span class="progress-left">
-								<span class="progress-bar border-danger"></span>
-						</span>
-						<span class="progress-right">
-								<span class="progress-bar border-danger"></span>
-						</span>
-						<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-							<div class="h2 font-weight-bold">50<sup class="small">%</sup></div>
-						</div>
-						</div>
-						<!-- END -->
-					</div>
-					</div>
+            <label for="inputSubject">Subject</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputSubject"
+              name="subject"
+              placeholder="Enter Subject"
+            />
 
-					<div class="col-xl-3 col-lg-6 mb-4">
-					<div class="bg-dark rounded-lg p-5 shadow" style="height: 100%;">
-						<h2 class="h6 font-weight-bold text-center mb-4">Bootstrap</h2>
-						<!-- Progress bar 3 -->
-						<div class="progress mx-auto" data-value='85'>
-						<span class="progress-left">
-								<span class="progress-bar border-success"></span>
-						</span>
-						<span class="progress-right">
-								<span class="progress-bar border-success"></span>
-						</span>
-						<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-							<div class="h2 font-weight-bold">85<sup class="small">%</sup></div>
-						</div>
-						</div>
-						<!-- END -->
-					</div>
-					</div>
+            <label for="inputMessage">Message</label>
+            <textarea
+              class="form-control"
+              id="inputMessage"
+              name="message"
+              rows="3"
+              placeholder="Write something here..."
+            ></textarea>
+            <br />
+            <button type="submit" class="btn btn-dark" id="submitbtn">
+              Submit
+            </button>
+            &nbsp;
+            <span style="color: #8f8d8d; font-size: 17px" id="resText"
+              >Success!</span
+            >
+            <br />
+            <br />
+          </div>
+          <div class="right d-flex align-items-center flex-column pt-4 mt-4">
+            <img
+              src="img/android-chrome-512x512.png"
+              alt="PM"
+              class="big-logo"
+            />
+            <div class="social-links d-flex align-items-center m-4">
+              <a href="https://github.com/purnadip-manna" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  fill="currentColor"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/purnadip-manna/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  fill="currentColor"
+                  class="bi bi-linkedin"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                  />
+                </svg>
+              </a>
 
-					<div class="col-xl-3 col-lg-6 mb-4">
-					<div class="bg-dark rounded-lg p-5 shadow" style="height: 100%;">
-						<h2 class="h6 font-weight-bold text-center mb-4">JS + JQuery + AJAX</h2>
-
-						<!-- Progress bar 4 -->
-						<div class="progress mx-auto" data-value='80'>
-						<span class="progress-left">
-								<span class="progress-bar border-warning"></span>
-						</span>
-						<span class="progress-right">
-								<span class="progress-bar border-warning"></span>
-						</span>
-						<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-							<div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
-						</div>
-						</div>
-						<!-- END -->
-					</div>
-					</div>
-				</div>
-			</div>
-			<button type="button" class="collapsible">Backend</button>
-			<div class="content">
-				<div class="row">
-					<div class="col-xl-3 col-lg-6 mb-4">
-					<div class="bg-dark rounded-lg p-5 shadow" style="height: 100%;">
-						<h2 class="h6 font-weight-bold text-center mb-4">Languages</h2>
-
-						<!-- Progress bar 5 -->
-						<div class="progress mx-auto" data-value='80'>
-						<span class="progress-left">
-								<span class="progress-bar border-warning"></span>
-						</span>
-						<span class="progress-right">
-								<span class="progress-bar border-warning"></span>
-						</span>
-						<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-							<div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
-						</div>
-						</div>
-						<!-- END -->
-						<!-- More info -->
-						<div class="row text-center mt-4">
-						<div class="col-6 border-right">
-							<div class="h4 font-weight-bold mb-0">85%</div><span class="small text-gray">Python</span>
-						</div>
-						<div class="col-6">
-							<div class="h4 font-weight-bold mb-0">75%</div><span class="small text-gray">Java</span>
-						</div>
-						</div>
-						<!-- END -->
-					</div>
-					</div>
-
-					<div class="col-xl-3 col-lg-6 mb-4">
-					<div class="bg-dark rounded-lg p-5 shadow" style="height: 100%;">
-						<h2 class="h6 font-weight-bold text-center mb-4">PHP + MySQL</h2>
-
-						<!-- Progress bar 6 -->
-						<div class="progress mx-auto" data-value='84'>
-						<span class="progress-left">
-								<span class="progress-bar border-primary"></span>
-						</span>
-						<span class="progress-right">
-								<span class="progress-bar border-primary"></span>
-						</span>
-						<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-							<div class="h2 font-weight-bold">83.5<sup class="small">%</sup></div>
-						</div>
-						</div>
-						<!-- END -->
-						<!-- More info -->
-						<div class="row text-center mt-4">
-						<div class="col-6 border-right">
-							<div class="h4 font-weight-bold mb-0">82%</div><span class="small text-gray">PHP</span>
-						</div>
-						<div class="col-6">
-							<div class="h4 font-weight-bold mb-0">85%</div><span class="small text-gray">MySQL</span>
-						</div>
-						</div>
-						<!-- END -->
-					</div>
-					</div>
-
-					<div class="col-xl-3 col-lg-6 mb-4">
-					<div class="bg-dark rounded-lg p-5 shadow" style="height: 100%;">
-						<h2 class="h6 font-weight-bold text-center mb-4">Django + Sqlite</h2>
-
-						<!-- Progress bar 7 -->
-						<div class="progress mx-auto" data-value='80'>
-						<span class="progress-left">
-								<span class="progress-bar border-danger"></span>
-						</span>
-						<span class="progress-right">
-								<span class="progress-bar border-danger"></span>
-						</span>
-						<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-							<div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
-						</div>
-						</div>
-						<!-- END -->
-						<!-- More info -->
-						<div class="row text-center mt-4">
-						<div class="col-6 border-right">
-							<div class="h4 font-weight-bold mb-0">85%</div><span class="small text-gray">Django</span>
-						</div>
-						<div class="col-6">
-							<div class="h4 font-weight-bold mb-0">75%</div><span class="small text-gray">Sqlite</span>
-						</div>
-						</div>
-						<!-- END -->
-					</div>
-					</div>
-
-					<div class="col-xl-3 col-lg-6 mb-4">
-					<div class="bg-dark rounded-lg p-5 shadow" style="height: 100%;">
-						<h2 class="h6 font-weight-bold text-center mb-4">Express JS + MongoDB</h2>
-						<!-- Progress bar 8 -->
-						<div class="progress mx-auto" data-value='53'>
-						<span class="progress-left">
-								<span class="progress-bar border-success"></span>
-						</span>
-						<span class="progress-right">
-								<span class="progress-bar border-success"></span>
-						</span>
-						<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-							<div class="h2 font-weight-bold">52.5<sup class="small">%</sup></div>
-						</div>
-						</div>
-						<!-- END -->
-					<!-- More info -->
-					<div class="row text-center mt-4">
-					<div class="col-6 border-right">
-						<div class="h4 font-weight-bold mb-0">55%</div><span class="small text-gray">Express</span>
-					</div>
-					<div class="col-6">
-						<div class="h4 font-weight-bold mb-0">50%</div><span class="small text-gray">MongoDB</span>
-					</div>
-					</div>
-					<!-- END -->
-					</div>
-					</div>
-				</div>
-			</div>
-			<button type="button" class="collapsible">Technology & Coding Profiles</button>
-			<div class="content">
-				<div class="row">
-					<div class="col-xl-3 col-lg-6 mb-4">
-						<div class="bg-dark rounded-lg pl-3 pr-3 pt-5 pb-3 shadow" style="height: 100%;">
-							<h2 class="h2 font-weight-bold text-center mb-4">Languages</h2>
-							<p align="center">
-								<img class="mdbadge" src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white">
-								<img class="mdbadge" src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white">
-								<img class="mdbadge" src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white">
-								<img class="mdbadge" src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white">
-								<img class="mdbadge" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
-								<img class="mdbadge" src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54">
-							</p>
-						</div>
-					</div>
-
-					<div class="col-xl-3 col-lg-6 mb-4">
-						<div class="bg-dark rounded-lg pl-3 pr-3 pt-5 pb-3 shadow" style="height: 100%;">
-							<h2 class="h2 font-weight-bold text-center mb-4">Coding Profiles</h2>
-							<p align="center">
-								<a href="https://leetcode.com/purnadip2702/" target="_blank"><img class="mdbadge" src="https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=LeetCode&logoColor=#d16c06"></a>
-								<a href="https://www.hackerrank.com/purnadip_manna_1" target="_blank"><img class="mdbadge" src="https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white"></a>
-							</p>
-						</div>
-					</div>
-
-					<div class="col-xl-3 col-lg-6 mb-4">
-						<div class="bg-dark rounded-lg pl-3 pr-3 pt-5 pb-3 shadow" style="height: 100%;">
-							<h2 class="h2 font-weight-bold text-center mb-4">Frameworks</h2>
-								<p align="center">
-									<img class="mdbadge" src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white">
-									<img class="mdbadge" src="https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray">
-									<img class="mdbadge" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB">
-									<img class="mdbadge" src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white">
-									<img class="mdbadge" src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white">
-								</p>
-						</div>
-					</div>
-
-					<div class="col-xl-3 col-lg-6 mb-4">
-						<div class="bg-dark rounded-lg pl-3 pr-3 pt-5 pb-3 shadow" style="height: 100%;">
-							<h2 class="h3 font-weight-bold text-center mb-4">Technologies</h2>
-								<p align="center">
-									<img class="mdbadge" src="https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white">
-									<img class="mdbadge" src="https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi">
-									<img class="mdbadge" src="https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=WordPress&logoColor=white">
-									<img class="mdbadge" src="https://img.shields.io/badge/dialogflow-FF9800?style=for-the-badge&logo=dialogflow&logoColor=white">
-									<img class="mdbadge" src="https://img.shields.io/badge/amazon%20alexa-52b5f7?style=for-the-badge&logo=amazon%20alexa&logoColor=white">
-								</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<button type="button" class="collapsible">Experience</button>
-			<div class="content">
-				<div class="row">
-					<div class="col-xl-3 col-lg-3 mb-4"></div>
-					<div class="col-xl-6 col-lg-6 mb-4">
-			      <div class="bg-dark rounded-lg p-4 shadow fixHeight">
-			        <h2 class="h3 font-weight-bold text-center mb-2 heading">Tutoraj</h2>
-			        <div class="h5 font-weight-bold text-center mb-4 subHeading">Technical Intern (Web Developer)</div>
-			        <div style="color: #8f8d8d;font-size: 12px;text-align: center;margin-top: -20px;">Sep 2020 - Nov 2020</div>
-			        <div class="para">
-			        	Performed backend operations with Myphp login, performed SQL quires, worked
-						on tasks related to UI/UX development on live sites (<a href="https://k2box.online/" target="_blank">K2Box</a>, <a href="https://tutoraj.com/" target="_blank">Tutoraj</a>)
-			        </div>
-			      </div>
-			    </div>
-					<div class="col-xl-3 col-lg-3 mb-4"></div>
-				</div>
-			</div>
-		</div>
-		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
-		<div id="project">
-			<br><br><br><br>
-			<h1>My Projects</h1>
-			<span id="short-line" style = "color: #b5a3ff;">Know about my Projects and work samples.</span>
-			<br><br>
-			<button type="button" class="collapsible">Group Projects</button>
-			<div class="content">
-				<div class="row">
-					<div class="col-xl-6 col-lg-6 mb-4">
-						<div class="bg-dark rounded-lg p-4 shadow fixHeight">
-							<a href="https://enliven.herokuapp.com/" target="_blank"><h2 class="h3 font-weight-bold text-center mb-2 heading">Enliven</h2></a>
-							<div class="h5 font-weight-bold text-center mb-4 subHeading">(AI Model + Web App)</div>
-							<div class="text-center small">
-								<span class="badge badge-info">BERT</span>
-								<span class="badge badge-info">KeyBERT</span>
-								<span class="badge badge-info">RNN</span>
-								<span class="badge badge-info">Bootstrap</span>
-								<span class="badge badge-info">Django</span>
-								<span class="badge badge-info">Sqlite</span><br>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-6 col-lg-6 mb-4">
-						<div class="bg-dark rounded-lg p-4 shadow fixHeight">
-							<a href="https://instant-grocery.netlify.app/" target="_blank"><h2 class="h3 font-weight-bold text-center mb-2 heading">Instant Grocery</h2></a>
-							<div class="h5 font-weight-bold text-center mb-4 subHeading">(Web Application)</div>
-							<div class="text-center small">
-								<span class="badge badge-info">Node JS</span>
-								<span class="badge badge-info">Express JS</span>
-								<span class="badge badge-info">React JS</span>
-								<span class="badge badge-info">MongoDB</span><br>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<button type="button" class="collapsible">Personal Projects</button>
-			<div class="content">			
-				<div class="row">
-					<div class="col-xl-3 col-lg-3 mb-4">
-					<div class="bg-dark rounded-lg p-4 shadow fixHeight">
-						<h2 class="h3 font-weight-bold text-center mb-2 heading">My Notes</h2>
-					<div class="h5 font-weight-bold text-center mb-4 subHeading">(Web Application)</div>
-						<div class="text-center small">
-							<span class="badge badge-info">Node JS</span>
-							<span class="badge badge-info">Express JS</span>
-							<span class="badge badge-info">React JS</span>
-							<span class="badge badge-info">MongoDB</span><br>
-						</div>
-					</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 mb-4">
-					<div class="bg-dark rounded-lg p-4 shadow fixHeight">
-						<a href="https://password-locker-pm.herokuapp.com/" target="_blank"><h2 class="h3 font-weight-bold text-center mb-2 heading">Password Locker</h2></a>
-						<div class="h5 font-weight-bold text-center mb-4 subHeading">(Web Application)</div>
-						<div class="text-center small">
-							<span class="badge badge-info">Python</span>
-							<span class="badge badge-info">Django</span>
-							<span class="badge badge-info">Sqlite</span>
-							<span class="badge badge-info">Bootstrap</span>
-							<span class="badge badge-info">JQuery/AJAX</span><br>
-						</div>
-					</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 mb-4">
-					<div class="bg-dark rounded-lg p-4 shadow fixHeight">
-						<h2 class="h3 font-weight-bold text-center mb-2 heading">MusicMan</h2>
-						<div class="h5 font-weight-bold text-center mb-4 subHeading">(Discord Bot)</div>
-						<div class="text-center small">
-							<span class="badge badge-info">Python</span>
-							<span class="badge badge-info">Discord</span><br>
-						</div>
-					</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 mb-4">
-					<div class="bg-dark rounded-lg p-4 shadow fixHeight">
-						<h2 class="h3 font-weight-bold text-center mb-2 heading">Home Automation</h2>
-						<div class="h5 font-weight-bold text-center mb-4 subHeading">(NodeMCU)</div>
-						<div class="text-center small">
-							<span class="badge badge-info">Arduino</span>
-							<span class="badge badge-info">ESP8266</span><br>
-						</div>
-					</div>
-					</div>
-				</div>
-			</div>
-
-			<button type="button" class="collapsible">Sample Works</button>
-			<div class="content">
-				<div class="row">
-					<div class="col-xl-6 col-lg-6 mb-4">
-						<div class="bg-dark rounded-lg p-4 shadow fixHeight">
-							<a href="https://phone-book-app-purnadip-manna.herokuapp.com/" target="_blank"><h2 class="h3 font-weight-bold text-center mb-2 heading">Phone Book App</h2></a>
-							<div class="h5 font-weight-bold text-center mb-4 subHeading">(Web App)</div>
-							<div class="text-center small">
-								<span class="badge badge-info">Bootstrap</span>
-								<span class="badge badge-info">Django</span>
-								<span class="badge badge-info">Sqlite</span><br>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-6 col-lg-6 mb-4">
-						<div class="bg-dark rounded-lg p-4 shadow fixHeight">
-							<a href="https://atlan-backend.herokuapp.com/form/response/?form_id=1&form_name=My%20First%20Form" target="_blank"><h2 class="h3 font-weight-bold text-center mb-2 heading">Form's Plugins</h2></a>
-							<div class="h5 font-weight-bold text-center mb-4 subHeading">(Web App)</div>
-							<div class="text-center small">
-								<span class="badge badge-info">Bootstrap</span>
-								<span class="badge badge-info">Django</span>
-								<span class="badge badge-info">Sqlite</span><br>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-	</div>
-			
-<!-- 			
-			<button type="button" class="collapsible">Work Samples</button>
-			<div class="content">
-				<div class="row">
-					
-				</div>
-			</div>
- -->
-		<br>
-		<hr style="background-color: #08fdd8; box-shadow: 0 0 0 0.1rem rgb(117 96 199 / 50%);">
-		<div id="contact"><br><br><br><br>
-			<h1>Contact Me</h1>
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="chart-window">
-						<div class="chart">
-							<label for="inputName">Name</label>
-		      				<input type="text" class="form-control" id="inputName" name="name" placeholder="Enter name">
-
-							<label for="inputEmail">Email</label>
-		      				<input type="email" class="form-control" id="inputEmail" name="email" placeholder="name@example.com">
-							
-							<label for="inputSubject">Subject</label>
-		      				<input type="text" class="form-control" id="inputSubject" name="subject" placeholder="Enter Subject">
-							
-							<label for="inputMessage">Message</label>
-		      				<textarea class="form-control" id="inputMessage" name="message" rows="3" placeholder="Write something here..."></textarea>
-		      				<br>
-		      				<button type="submit" class="btn btn-sm" id="submitbtn">Submit</button><br>
-		      				<span style="color: #8f8d8d;font-size: 17px;" id="resText"></span>
-		      				<br>
-		      				<br>
-
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<p align="center">
-						<img src="./img/android-chrome-512x512.png" style="width: 12rem;">
-					</p>
-						<div class="wrapper">
-							<!-- Social Icons -->
-							<span class="nav-link soc">
-								<li><a class="icon-13 github" href="https://github.com/purnadip-manna" title="GitHub" target="_blank">
-								<div class="ir">
-								  <svg viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
-									<path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"></path>
-								  </svg>
-								</div></a>
-								</li>
-							</span>
-
-							<span class="nav-link soc"><li><a class="icon-8 email" href="mailto:purnadipmanna2702@gmail.com" title="Gmail">
-								<div class="ir">
-								  <svg viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
-									<path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"></path>
-								  </svg>
-								</div></a>
-								</li>
-							</span>
-
-							<span class="nav-link soc"><li><a class="icon-17 linkedin" href="https://www.linkedin.com/in/purnadip-manna/" title="LinkedIn" target="_blank">
-								<div class="ir">
-								  <svg viewBox="0 0 512 512"><path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/></svg>
-								</div></a>
-								</li>
-							</span>
-					
-						  <!-- Social Icons -->
-						</div>
-				</div>
-			</div>
-		</div>      
-	  </div>
-	<script>
-	var typed = new Typed('#typed',{
-					strings:["Programmer","Web Developer", "Full Stack Developer"],
-					backSpeed: 25,
-					smartBackspace: true,
-					backDelay: 1200,
-					startDelay: 1000,
-					typeSpeed: 25,
-					loop: true,
-
-					});
-   	</script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+              <a href="mailto:purnadipmanna2702@gmail.com">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  fill="currentColor"
+                  class="bi bi-envelope-at-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"
+                  />
+                  <path
+                    d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center m-5" style="color: #8f8d8d">
+      Copyright © 2024, Purnadip Manna
+    </p>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="./js/index.js"></script>
-</body>
-<footer>
-	<hr style="background-color: #8f8d8d; width: 60%;">
-	<p align="center" style="color: #8f8d8d;">Copyright © 2021, Purnadip Manna</p>
-</footer>
+  </body>
 </html>

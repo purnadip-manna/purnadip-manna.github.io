@@ -1,0 +1,221 @@
+body {
+  background-color: #f8f9fa;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  width: 40px;
+}
+
+.big-logo{
+  width: 120px;
+}
+
+.navbar .navbar-brand {
+  font-size: 30px;
+}
+.navbar .nav-item {
+  padding: 10px 20px;
+}
+.navbar .nav-link {
+  font-size: 20px;
+  margin-left: 10px;
+  color: black;
+}
+
+#profilePicture {
+  width: 52%;
+  margin-top: 2.4rem;
+  border-radius: 12px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.mycontainer {
+  min-height: 86vh;
+}
+
+.description {
+  font-size: large;
+  text-align: justify;
+}
+
+.left {
+  padding-top: 2rem;
+  flex-basis: 60%;
+}
+
+.right {
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.btn-light {
+  border: 1px solid #212529;
+}
+
+.btn-light:hover {
+  color: #fff;
+  background-color: #212529;
+  border-color: #212529;
+}
+
+@media screen and (min-width: 480px) {
+  .root {
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .left {
+    padding-top: 2rem;
+    flex-basis: 60%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .root {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+
+.timeline_area {
+  position: relative;
+  z-index: 1;
+}
+.single-timeline-area {
+  position: relative;
+  z-index: 1;
+  padding-left: 180px;
+}
+@media only screen and (max-width: 575px) {
+  .single-timeline-area {
+      padding-left: 100px;
+  }
+}
+.single-timeline-area .timeline-date {
+  position: absolute;
+  width: 180px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-right: 60px;
+}
+@media only screen and (max-width: 575px) {
+  .single-timeline-area .timeline-date {
+      width: 100px;
+  }
+}
+.single-timeline-area .timeline-date::after {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  content: "";
+  background-color: #ebebeb;
+  top: 0;
+  right: 30px;
+  z-index: 1;
+}
+.single-timeline-area .timeline-date::before {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #f1c40f;
+  content: "";
+  top: 50%;
+  right: 26px;
+  z-index: 5;
+  margin-top: -5.5px;
+}
+.single-timeline-area .timeline-date p {
+  margin-bottom: 0;
+  color: #020710;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.single-timeline-area .single-timeline-content {
+  height: 220px;
+  position: relative;
+  z-index: 1;
+  padding: 30px 30px 25px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  -webkit-box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+  box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+  border: 1px solid #ebebeb;
+}
+@media only screen and (max-width: 575px) {
+  .single-timeline-area .single-timeline-content {
+      padding: 20px;
+  }
+}
+.single-timeline-area .single-timeline-content .timeline-icon {
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  width: 30px;
+  height: 30px;
+  background-color: #f1c40f;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 30px;
+  flex: 0 0 30px;
+  text-align: center;
+  max-width: 30px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.single-timeline-area .single-timeline-content .timeline-icon i {
+  color: #ffffff;
+  line-height: 30px;
+}
+.single-timeline-area .single-timeline-content .timeline-text h6 {
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+.single-timeline-area .single-timeline-content .timeline-text p {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+label{
+  font-weight: 600;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.social-links{
+  gap: 1rem;
+}
+
+.social-links .bi{
+  cursor: pointer;
+}
+
+.social-links .bi:hover{
+  transform: scale(1.2);
+  transition: transform 0.2s;
+}
