@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Primary Meta Tags -->
+    <title>Purnadip Manna | Software Engineer Portfolio</title>
+    <meta
+      name="title"
+      content="Purnadip Manna | Software Engineer Portfolio"
+    />
+    <meta
+      name="description"
+      content="Hello! This is Purnadip Manna — a passionate Software Engineer with more than 3 years of experience building scalable applications and RESTful APIs using microservices. Skilled in Java, Spring Boot, Angular, and PostgreSQL."
+    />
+    <meta
+      name="keywords"
+      content="Purnadip Manna, Software Engineer, Java, Spring Boot, Angular, PostgreSQL, Microservices, REST API, AWS, Portfolio, Kolkata, India"
+    />
+    <meta name="author" content="Purnadip Manna" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="theme-color" content="#3b82f6" />
+    <link rel="canonical" href="https://purnadip-manna.github.io/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://purnadip-manna.github.io/" />
     <meta property="og:title" content="Purnadip Manna" />
-    <meta name="description" content="Hello! This is Purnadip Manna" />
+    <meta
+      property="og:description"
+      content="Hello! This is Purnadip Manna"
+    />
+    <meta
+      property="og:image"
+      content="https://purnadip-manna.github.io/img/Profile_Picture.png"
+    />
+    <meta property="og:site_name" content="Purnadip Manna" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://purnadip-manna.github.io/" />
+    <meta name="twitter:title" content="Purnadip Manna" />
+    <meta
+      name="twitter:description"
+      content="Hello! This is Purnadip Manna"
+    />
+    <meta
+      name="twitter:image"
+      content="https://purnadip-manna.github.io/img/Profile_Picture.png"
+    />
+
+    <!-- Favicons -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -24,6 +71,10 @@
       href="./img/favicon-16x16.png"
     />
 
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -32,732 +83,622 @@
       crossorigin="anonymous"
     />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Purnadip Manna</title>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Purnadip Manna",
+        "url": "https://purnadip-manna.github.io/",
+        "image": "https://purnadip-manna.github.io/img/Profile_Picture.png",
+        "jobTitle": "Software Engineer",
+        "description": "Hello! This is Purnadip Manna",
+        "email": "purnadip.manna@gmail.com",
+        "sameAs": [
+          "https://github.com/purnadip-manna",
+          "https://www.linkedin.com/in/purnadip-manna/"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "GeoTech Infoservices Pvt Ltd."
+        },
+        "knowsAbout": [
+          "Java",
+          "Spring Boot",
+          "Angular",
+          "PostgreSQL",
+          "Microservices",
+          "REST API",
+          "AWS"
+        ]
+      }
+    </script>
   </head>
   <body>
-    <div class="root">
-      <nav class="navbar sticky-top navbar-expand-lg bg-light">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <nav
+        class="navbar navbar-expand-lg"
+        aria-label="Main navigation"
+      >
         <div class="container">
-          <a class="navbar-brand" href="#"> Purnadip Manna </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-list"
-              viewBox="0 0 16 16"
+          <a class="navbar-brand" href="#home"> Purnadip Manna </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-              <path
-                fill-rule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-              />
-            </svg>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto w-100 justify-content-end">
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#experience">Experience</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div class="mycontainer" id="home">
-        <br />
-        <div class="container d-md-flex">
-          <div class="left">
-            <h1 style="font-size: 3rem">I'm Purnadip, a</h1>
-            <h1 style="font-size: 3rem">Software Engineer</h1>
-            <br />
-            <div class="description">
-              I'm a passionate Software Engineer with more than 3 years of
-              experience in building scalable applications and RESTful APIs
-              using microservices. Skilled in Java, Spring Boot, Angular, and
-              PostgreSQL, with a knack for solving complex problems and
-              delivering high-quality solutions.
-            </div>
-            <div class="mt-5">
-              <a
-                href="https://drive.google.com/drive/folders/1J_v9yh_YVLOVQoa2SnWTI_Rrjv0UlM5X?usp=sharing"
-                target="_blank"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-list"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
               >
-                <button type="button" class="btn btn-dark">Resume</button>
-              </a>
-              &nbsp;
-              <a
-                href="https://www.linkedin.com/in/purnadip-manna/"
-                target="_blank"
-              >
-                <button type="button" class="btn btn-light">LinkedIn</button>
-              </a>
-            </div>
-          </div>
-          <div class="right">
-            <img
-              src="img/Profile_Picture.png"
-              alt="photo"
-              id="profilePicture"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="mycontainer" id="about">
-        <br /><br /><br />
-        <div class="h2 text-center">About</div>
-        <div class="description">
-          <div class="h5 mt-4">Who am I?</div>
-          <div class="text-justify">
-            I’m a passionate Software Engineer with more than 3 years of
-            experience in developing and optimizing scalable web applications
-            and RESTful APIs. I thrive in building robust solutions using
-            microservices and event-driven architectures, leveraging
-            technologies like Java, Spring Boot, Angular, and PostgreSQL. With
-            hands-on experience in OAuth 2.0 and familiarity with AWS, I
-            continuously strive to learn and grow. Whether it’s collaborating
-            with a team or tackling complex challenges, I’m committed to
-            delivering high-quality software that makes a difference.
-          </div>
-          <div class="h5 mt-4">Why work with me?</div>
-          <div class="text-justify">
-            I bring a blend of technical expertise and a proactive mindset to
-            every project I work on. What sets me apart is my quick learning
-            ability, strong problem-solving skills, and a team-oriented
-            approach. I thrive in collaborative environments, adapt quickly to
-            new technologies, and am committed to delivering high-quality
-            software solutions that drive business success.
-          </div>
-          <div class="h5 mt-4">What is my interest?</div>
-          <div class="text-justify">
-            I am interested in various kinds of architecture of Microservices.
-            Apart from this, upcoming new technologies like Generative AI
-            fascinates me a lot.
-          </div>
-        </div>
-      </div>
-      <div class="mycontainer" id="experience">
-        <br /><br /><br />
-        <div class="h2 text-center">Experience</div>
-        <div class="timeline_area section_padding_130 mt-5">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <!-- Timeline Area-->
-                <div class="apland-timeline-area">
-                  <!-- Single Timeline Content-->
-                  <div class="single-timeline-area">
-                    <div
-                      class="timeline-date wow fadeInLeft"
-                      data-wow-delay="0.1s"
-                      style="
-                        visibility: visible;
-                        animation-delay: 0.1s;
-                        animation-name: fadeInLeft;
-                      "
-                    >
-                      <p>2023 - 2026</p>
-                    </div>
-                    <div class="row">
-                      <div class="col-12 col-md-6 col-lg-4">
-                        <div
-                          class="single-timeline-content d-flex wow fadeInLeft"
-                          data-wow-delay="0.3s"
-                          style="
-                            visibility: visible;
-                            animation-delay: 0.3s;
-                            animation-name: fadeInLeft;
-                          "
-                        >
-                          <div class="timeline-icon">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              fill="currentColor"
-                              class="bi bi-suitcase-lg"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                d="M5 2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2h3.5A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5H14a.5.5 0 0 1-1 0H3a.5.5 0 0 1-1 0h-.5A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2zm1 0h4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1M1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5H3V3zM15 12.5v-9a.5.5 0 0 0-.5-.5H13v10h1.5a.5.5 0 0 0 .5-.5m-3 .5V3H4v10z"
-                              />
-                            </svg>
-                          </div>
-                          <div class="timeline-text">
-                            <h6>Software Engineer</h6>
-                            <p>
-                              GeoTech Infoservices Pvt Ltd. (Kolkata, India)
-                            </p>
-                            <p class="fst-italic fw-lighter">
-                              Apr 2024 - Present
-                            </p>
-                            <div class="used-skills">
-                              <span class="badge rounded-pill bg-secondary"
-                                >Generative AI</span
-                              >
-                              <span class="badge rounded-pill bg-secondary"
-                                >LLMs</span
-                              >
-                              <span class="badge rounded-pill bg-secondary"
-                                >AWS Bedrock</span
-                              >
-                              <span class="badge rounded-pill bg-secondary"
-                                >Microservice</span
-                              >
-                              <span class="badge rounded-pill bg-secondary"
-                                >SNS & SQS</span
-                              >
-                              <span class="badge rounded-pill bg-secondary"
-                                >REST API</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-6 col-lg-4">
-                        <div
-                          class="single-timeline-content d-flex wow fadeInLeft"
-                          data-wow-delay="0.5s"
-                          style="
-                            visibility: visible;
-                            animation-delay: 0.5s;
-                            animation-name: fadeInLeft;
-                          "
-                        >
-                          <div class="timeline-icon">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              fill="currentColor"
-                              class="bi bi-briefcase"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"
-                              />
-                            </svg>
-                          </div>
-                          <div class="timeline-text">
-                            <h6>Software Engineer Trainee</h6>
-                            <p>
-                              GeoTech Infoservices Pvt Ltd. (Kolkata, India)
-                            </p>
-                            <p class="fst-italic fw-lighter">
-                              Jun 2023 - Apr 2024
-                            </p>
-                            <div class="used-skills">
-                              <span class="badge rounded-pill bg-secondary"
-                                >Angular</span
-                              >
-                              <span class="badge rounded-pill bg-secondary"
-                                >MongoDB</span
-                              >
-                              <span class="badge rounded-pill bg-secondary"
-                                >SpringBoot</span
-                              >
-                              <span class="badge rounded-pill bg-secondary"
-                                >React</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-6 col-lg-4">
-                        <div
-                          class="single-timeline-content d-flex wow fadeInLeft"
-                          data-wow-delay="0.7s"
-                          style="
-                            visibility: visible;
-                            animation-delay: 0.7s;
-                            animation-name: fadeInLeft;
-                          "
-                        >
-                          <div class="timeline-icon">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              fill="currentColor"
-                              class="bi bi-suitcase2"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                d="M6.5 0a.5.5 0 0 0-.5.5V3H5a2 2 0 0 0-2 2v8a2 2 0 0 0 1.031 1.75A1.003 1.003 0 0 0 5 16a1 1 0 0 0 1-1h4a1 1 0 1 0 1.969-.25A2 2 0 0 0 13 13V5a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-.5-.5zM9 3H7V1h2zm3 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7h8zM5 4h6a1 1 0 0 1 1 1v1H4V5a1 1 0 0 1 1-1"
-                              />
-                            </svg>
-                          </div>
-                          <div class="timeline-text">
-                            <h6>Software Engineer Intern</h6>
-                            <p>
-                              GeoTech Infoservices Pvt Ltd. (Kolkata, India)
-                            </p>
-                            <p class="fst-italic fw-lighter">
-                              Jan 2023 - Jun 2023
-                            </p>
-                            <div class="used-skills">
-                              <span class="badge rounded-pill bg-secondary"
-                                >Java</span
-                              >
-                              <span class="badge rounded-pill bg-secondary"
-                                >SpringBoot</span
-                              >
-                              <span class="badge rounded-pill bg-secondary"
-                                >React</span
-                              >
-                              <span class="badge rounded-pill bg-secondary"
-                                >AWS</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Single Timeline Content-->
-                  <div class="single-timeline-area">
-                    <div
-                      class="timeline-date wow fadeInLeft"
-                      data-wow-delay="0.1s"
-                      style="
-                        visibility: visible;
-                        animation-delay: 0.1s;
-                        animation-name: fadeInLeft;
-                      "
-                    >
-                      <p>2022</p>
-                    </div>
-                    <div class="row">
-                      <div class="col-12 col-md-6 col-lg-4">
-                        <div
-                          class="single-timeline-content d-flex wow fadeInLeft"
-                          data-wow-delay="0.3s"
-                          style="
-                            visibility: visible;
-                            animation-delay: 0.3s;
-                            animation-name: fadeInLeft;
-                          "
-                        >
-                          <div class="timeline-icon">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              fill="currentColor"
-                              class="bi bi-braces-asterisk"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M1.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C2.25 2 1.49 2.759 1.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6M14.886 7.9v.164c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456v-1.3c-1.114 0-1.49-.362-1.49-1.456V4.352C14.51 2.759 13.75 2 12.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6M7.5 11.5V9.207l-1.621 1.621-.707-.707L6.792 8.5H4.5v-1h2.293L5.172 5.879l.707-.707L7.5 6.792V4.5h1v2.293l1.621-1.621.707.707L9.208 7.5H11.5v1H9.207l1.621 1.621-.707.707L8.5 9.208V11.5z"
-                              />
-                            </svg>
-                          </div>
-                          <div class="timeline-text">
-                            <h6>Backend Developer</h6>
-                            <p>SwiftSku (California, United States) [Remote]</p>
-                            <p class="fst-italic fw-lighter">
-                              Jul 2022 - Sep 2022
-                            </p>
-                            <div class="used-skills">
-                              <span class="badge rounded-pill bg-secondary"
-                                >Python</span
-                              >
-                              <span class="badge rounded-pill bg-secondary"
-                                >Fast API</span
-                              >
-                              <span class="badge rounded-pill bg-secondary"
-                                >Salesforce API</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Single Timeline Content-->
-                  <div class="single-timeline-area">
-                    <div
-                      class="timeline-date wow fadeInLeft"
-                      data-wow-delay="0.1s"
-                      style="
-                        visibility: visible;
-                        animation-delay: 0.1s;
-                        animation-name: fadeInLeft;
-                      "
-                    >
-                      <p>2020</p>
-                    </div>
-                    <div class="row">
-                      <div class="col-12 col-md-6 col-lg-4">
-                        <div
-                          class="single-timeline-content d-flex wow fadeInLeft"
-                          data-wow-delay="0.3s"
-                          style="
-                            visibility: visible;
-                            animation-delay: 0.3s;
-                            animation-name: fadeInLeft;
-                          "
-                        >
-                          <div class="timeline-icon">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              fill="currentColor"
-                              class="bi bi-code-slash"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"
-                              />
-                            </svg>
-                          </div>
-                          <div class="timeline-text">
-                            <h6>Technical Intern</h6>
-                            <p>Tutoraj (Tamil Nadu, India) [Remote]</p>
-                            <p class="fst-italic fw-lighter">
-                              Sep 2020 - Nov 2020
-                            </p>
-                            <div class="used-skills">
-                              <span class="badge rounded-pill bg-secondary"
-                                >PHP</span
-                              >
-                              <span class="badge rounded-pill bg-secondary"
-                                >MySQL</span
-                              >
-                              <span class="badge rounded-pill bg-secondary"
-                                >WordPress</span
-                              >
-                              <span class="badge rounded-pill bg-secondary"
-                                >JS</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mycontainer" id="projects">
-        <br /><br /><br />
-        <div class="h2 text-center">Projects</div>
-        <div class="description d-md-flex justify-content-center mt-5">
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card" style="width: 18rem">
-                <div class="card-img">
-                  <img
-                    src="img/trackexp.png"
-                    class="card-img-top"
-                    alt="TrackExp"
-                  />
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title d-flex justify-content-between">
-                    <div>
-                      TrackExp
-                      <a
-                        href="https://track-exp-app.vercel.app/"
-                        target="_blank"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-box-arrow-up-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                          />
-                          <path
-                            fill-rule="evenodd"
-                            d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                    <div>
-                      <a
-                        href="https://github.com/purnadip-manna/track-exp-app"
-                        target="_blank"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-github"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </h5>
-                  <p class="card-text">
-                    An application to track daily expenses and analysis your
-                    expenses.
-                  </p>
-                  <div class="tech-stack">
-                    <span class="badge rounded-pill bg-secondary">Angular</span>
-                    <span class="badge rounded-pill bg-secondary"
-                      >SpringBoot</span
-                    >
-                    <span class="badge rounded-pill bg-secondary">MongoDB</span>
-                  </div>
-                </div>
-                <!-- <a href="#" class="btn btn-dark">Details</a> -->
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card" style="width: 18rem">
-                <div class="card-img">
-                  <img src="img/6868598.webp" class="card-img-top" alt="LMS" />
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title d-flex justify-content-between">
-                    <div>
-                      Notes API
-                      <!-- <a
-                        href="#"
-                        target="_blank"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-box-arrow-up-right"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                          />
-                          <path
-                            fill-rule="evenodd"
-                            d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                          />
-                        </svg>
-                      </a> -->
-                    </div>
-                    <div>
-                      <a
-                        href="https://github.com/purnadip-manna/note-api?tab=readme-ov-file#notes-api"
-                        target="_blank"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-github"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </h5>
-                  <p class="card-text">Simple notes API for managing notes.</p>
-                  <div class="tech-stack">
-                    <span class="badge rounded-pill bg-secondary">FastAPI</span>
-                    <span class="badge rounded-pill bg-secondary"
-                      >PostgreSQL</span
-                    >
-                    <span class="badge rounded-pill bg-secondary">Docker</span>
-                  </div>
-                </div>
-                <!-- <a href="#" class="btn btn-dark">Details</a> -->
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card" style="width: 18rem">
-                <div class="card-img">
-                  <img src="img/mrbs.png" class="card-img-top" alt="MRBS" />
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">MRBS</h5>
-                  <p class="card-text">
-                    A meeting room booking system for an organization to book
-                    their meeting rooms.
-                  </p>
-                  <div class="tech-stack">
-                    <span class="badge rounded-pill bg-secondary">React</span>
-                    <span class="badge rounded-pill bg-secondary"
-                      >SpringBoot</span
-                    >
-                    <span class="badge rounded-pill bg-secondary">MongoDB</span>
-                    <span class="badge rounded-pill bg-secondary">SQS</span>
-                    <span class="badge rounded-pill bg-secondary"
-                      >Microservice</span
-                    >
-                  </div>
-                </div>
-                <!-- <a href="#" class="btn btn-dark">Details</a> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mycontainer" id="contact">
-        <br /><br /><br />
-        <div class="h2 text-center">Contact</div>
-        <div class="description d-md-flex">
-          <div class="left p-4 text-start">
-            <label for="inputName">Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputName"
-              name="name"
-              placeholder="Enter name"
-            />
-
-            <label for="inputEmail">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              id="inputEmail"
-              name="email"
-              placeholder="name@example.com"
-            />
-
-            <label for="inputSubject">Subject</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputSubject"
-              name="subject"
-              placeholder="Enter Subject"
-            />
-
-            <label for="inputMessage">Message</label>
-            <textarea
-              class="form-control"
-              id="inputMessage"
-              name="message"
-              rows="3"
-              placeholder="Write something here..."
-            ></textarea>
-            <br />
-            <button type="submit" class="btn btn-dark" id="submitbtn">
-              Submit
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                />
+              </svg>
             </button>
-            &nbsp;
-            <span style="color: #8f8d8d; font-size: 17px" id="resText"></span>
-            <br />
-            <br />
-          </div>
-          <div class="right d-flex align-items-center flex-column pt-4 mt-4">
-            <img
-              src="img/android-chrome-512x512.png"
-              alt="PM"
-              class="big-logo"
-            />
-            <div class="social-links d-flex align-items-center m-4">
-              <a href="https://github.com/purnadip-manna" target="_blank">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
-                  fill="currentColor"
-                  class="bi bi-github"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/purnadip-manna/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
-                  fill="currentColor"
-                  class="bi bi-linkedin"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
-                  />
-                </svg>
-              </a>
 
-              <a href="mailto:purnadip.manna@gmail.com">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
-                  fill="currentColor"
-                  class="bi bi-envelope-at-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"
-                  />
-                  <path
-                    d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"
-                  />
-                </svg>
-              </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-      </div>
+      </nav>
+    </header>
+
+    <div class="root">
+      <main id="main-content">
+        <section class="mycontainer" id="home" aria-labelledby="hero-heading">
+          <div class="container d-md-flex align-items-center">
+            <div class="left">
+              <h1 id="hero-heading">
+                <span class="hero-greeting">I'm Purnadip, a</span>
+                <span class="hero-title highlight">Software Engineer</span>
+              </h1>
+              <div class="description mt-4">
+                I'm a passionate Software Engineer with more than 3 years of
+                experience in building scalable applications and RESTful APIs
+                using microservices. Skilled in Java, Spring Boot, Angular, and
+                PostgreSQL, with a knack for solving complex problems and
+                delivering high-quality solutions.
+              </div>
+              <div class="btn-group-hero">
+                <a
+                  href="https://drive.google.com/drive/folders/1J_v9yh_YVLOVQoa2SnWTI_Rrjv0UlM5X?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button type="button" class="btn btn-dark">Resume</button>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/purnadip-manna/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button type="button" class="btn btn-light">LinkedIn</button>
+                </a>
+              </div>
+            </div>
+            <div class="right">
+              <img
+                src="img/Profile_Picture.png"
+                alt="Purnadip Manna - Software Engineer"
+                id="profilePicture"
+                width="380"
+                height="380"
+                loading="eager"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="mycontainer" id="about" aria-labelledby="about-heading">
+          <div class="section-header">
+            <h2 class="section-title" id="about-heading">About</h2>
+            <div class="section-divider" aria-hidden="true"></div>
+          </div>
+          <div class="description about-block">
+            <h3 class="h5">Who am I?</h3>
+            <div class="text-justify">
+              I'm a passionate Software Engineer with more than 3 years of
+              experience in developing and optimizing scalable web applications
+              and RESTful APIs. I thrive in building robust solutions using
+              microservices and event-driven architectures, leveraging
+              technologies like Java, Spring Boot, Angular, and PostgreSQL. With
+              hands-on experience in OAuth 2.0 and familiarity with AWS, I
+              continuously strive to learn and grow. Whether it's collaborating
+              with a team or tackling complex challenges, I'm committed to
+              delivering high-quality software that makes a difference.
+            </div>
+            <h3 class="h5">Why work with me?</h3>
+            <div class="text-justify">
+              I bring a blend of technical expertise and a proactive mindset to
+              every project I work on. What sets me apart is my quick learning
+              ability, strong problem-solving skills, and a team-oriented
+              approach. I thrive in collaborative environments, adapt quickly to
+              new technologies, and am committed to delivering high-quality
+              software solutions that drive business success.
+            </div>
+            <h3 class="h5">What is my interest?</h3>
+            <div class="text-justify">
+              I am interested in various kinds of architecture of Microservices.
+              Apart from this, upcoming new technologies like Generative AI
+              fascinates me a lot.
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="mycontainer experience-section"
+          id="experience"
+          aria-labelledby="experience-heading"
+        >
+          <div class="section-header">
+            <h2 class="section-title" id="experience-heading">Experience</h2>
+            <div class="section-divider" aria-hidden="true"></div>
+          </div>
+
+          <div class="career-stream">
+            <div class="career-chapter">
+              <div class="career-era">2023 - 2026</div>
+              <ol class="career-list">
+                <li class="career-item career-item--active">
+                  <article class="career-card">
+                    <header class="career-card-head">
+                      <h3 class="career-role">Software Engineer</h3>
+                      <time class="career-duration">Apr 2024 - Present</time>
+                    </header>
+                    <div class="career-card-body">
+                      <p class="career-org">GeoTech Infoservices Pvt Ltd. (Kolkata, India)</p>
+                      <div class="career-tech">
+                        <span>Generative AI</span>
+                        <span>LLMs</span>
+                        <span>AWS Bedrock</span>
+                        <span>Microservice</span>
+                        <span>AWS</span>
+                        <span>REST API</span>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="career-item">
+                  <article class="career-card">
+                    <header class="career-card-head">
+                      <h3 class="career-role">Software Engineer Trainee</h3>
+                      <time class="career-duration">Jul 2023 - Mar 2024</time>
+                    </header>
+                    <div class="career-card-body">
+                      <p class="career-org">GeoTech Infoservices Pvt Ltd. (Kolkata, India)</p>
+                      <div class="career-tech">
+                        <span>Angular</span>
+                        <span>MongoDB</span>
+                        <span>SpringBoot</span>
+                        <span>React</span>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="career-item">
+                  <article class="career-card">
+                    <header class="career-card-head">
+                      <h3 class="career-role">Software Engineer Intern</h3>
+                      <time class="career-duration">Jan 2023 - Jun 2023</time>
+                    </header>
+                    <div class="career-card-body">
+                      <p class="career-org">GeoTech Infoservices Pvt Ltd. (Kolkata, India)</p>
+                      <div class="career-tech">
+                        <span>Java</span>
+                        <span>SpringBoot</span>
+                        <span>React</span>
+                        <span>AWS</span>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+              </ol>
+            </div>
+
+            <div class="career-chapter">
+              <div class="career-era">2022</div>
+              <ol class="career-list">
+                <li class="career-item">
+                  <article class="career-card">
+                    <header class="career-card-head">
+                      <h3 class="career-role">Backend Developer</h3>
+                      <time class="career-duration">Jul 2022 - Sep 2022</time>
+                    </header>
+                    <div class="career-card-body">
+                      <p class="career-org">SwiftSku (California, United States) [Remote]</p>
+                      <div class="career-tech">
+                        <span>Python</span>
+                        <span>Fast API</span>
+                        <span>Salesforce API</span>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+              </ol>
+            </div>
+
+            <div class="career-chapter">
+              <div class="career-era">2020</div>
+              <ol class="career-list">
+                <li class="career-item">
+                  <article class="career-card">
+                    <header class="career-card-head">
+                      <h3 class="career-role">Technical Intern</h3>
+                      <time class="career-duration">Sep 2020 - Nov 2020</time>
+                    </header>
+                    <div class="career-card-body">
+                      <p class="career-org">Tutoraj (Tamil Nadu, India) [Remote]</p>
+                      <div class="career-tech">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>WordPress</span>
+                        <span>JS</span>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="mycontainer"
+          id="projects"
+          aria-labelledby="projects-heading"
+        >
+          <div class="section-header">
+            <h2 class="section-title" id="projects-heading">Projects</h2>
+            <div class="section-divider" aria-hidden="true"></div>
+          </div>
+          <div class="description d-md-flex justify-content-center">
+            <div class="row w-100">
+              <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100">
+                  <div class="card-img">
+                    <img
+                      src="img/trackexp.png"
+                      class="card-img-top"
+                      alt="TrackExp"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title d-flex justify-content-between">
+                      <div>
+                        TrackExp
+                        <a
+                          href="https://track-exp-app.vercel.app/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="Visit TrackExp live demo"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-box-arrow-up-right"
+                            viewBox="0 0 16 16"
+                            aria-hidden="true"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                      <div>
+                        <a
+                          href="https://github.com/purnadip-manna/track-exp-app"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="TrackExp GitHub repository"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-github"
+                            viewBox="0 0 16 16"
+                            aria-hidden="true"
+                          >
+                            <path
+                              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                    </h3>
+                    <p class="card-text">
+                      An application to track daily expenses and analysis your
+                      expenses.
+                    </p>
+                    <div class="tech-stack">
+                      <span class="badge rounded-pill bg-secondary"
+                        >Angular</span
+                      >
+                      <span class="badge rounded-pill bg-secondary"
+                        >SpringBoot</span
+                      >
+                      <span class="badge rounded-pill bg-secondary"
+                        >MongoDB</span
+                      >
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100">
+                  <div class="card-img">
+                    <img
+                      src="img/6868598.webp"
+                      class="card-img-top"
+                      alt="LMS"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title d-flex justify-content-between">
+                      <div>
+                        Notes API
+                      </div>
+                      <div>
+                        <a
+                          href="https://github.com/purnadip-manna/note-api?tab=readme-ov-file#notes-api"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="Notes API GitHub repository"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-github"
+                            viewBox="0 0 16 16"
+                            aria-hidden="true"
+                          >
+                            <path
+                              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                    </h3>
+                    <p class="card-text">
+                      Simple notes API for managing notes.
+                    </p>
+                    <div class="tech-stack">
+                      <span class="badge rounded-pill bg-secondary"
+                        >FastAPI</span
+                      >
+                      <span class="badge rounded-pill bg-secondary"
+                        >PostgreSQL</span
+                      >
+                      <span class="badge rounded-pill bg-secondary"
+                        >Docker</span
+                      >
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100">
+                  <div class="card-img">
+                    <img
+                      src="img/mrbs.png"
+                      class="card-img-top"
+                      alt="MRBS"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">MRBS</h3>
+                    <p class="card-text">
+                      A meeting room booking system for an organization to book
+                      their meeting rooms.
+                    </p>
+                    <div class="tech-stack">
+                      <span class="badge rounded-pill bg-secondary"
+                        >React</span
+                      >
+                      <span class="badge rounded-pill bg-secondary"
+                        >SpringBoot</span
+                      >
+                      <span class="badge rounded-pill bg-secondary"
+                        >MongoDB</span
+                      >
+                      <span class="badge rounded-pill bg-secondary">SQS</span>
+                      <span class="badge rounded-pill bg-secondary"
+                        >Microservice</span
+                      >
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="mycontainer"
+          id="contact"
+          aria-labelledby="contact-heading"
+        >
+          <div class="section-header">
+            <h2 class="section-title" id="contact-heading">Contact</h2>
+            <div class="section-divider" aria-hidden="true"></div>
+          </div>
+          <div class="description d-md-flex">
+            <div class="left text-start">
+              <label for="inputName">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputName"
+                name="name"
+                placeholder="Enter name"
+                autocomplete="name"
+              />
+
+              <label for="inputEmail">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                name="email"
+                placeholder="name@example.com"
+                autocomplete="email"
+              />
+
+              <label for="inputSubject">Subject</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputSubject"
+                name="subject"
+                placeholder="Enter Subject"
+              />
+
+              <label for="inputMessage">Message</label>
+              <textarea
+                class="form-control"
+                id="inputMessage"
+                name="message"
+                rows="3"
+                placeholder="Write something here..."
+              ></textarea>
+
+              <div class="mt-4">
+                <button type="submit" class="btn btn-dark" id="submitbtn">
+                  Submit
+                </button>
+                <span id="resText"></span>
+              </div>
+            </div>
+            <div class="right d-flex align-items-center flex-column">
+              <img
+                src="img/android-chrome-512x512.png"
+                alt="PM"
+                class="big-logo"
+                width="100"
+                height="100"
+                loading="lazy"
+              />
+              <div class="social-links d-flex align-items-center m-4">
+                <a
+                  href="https://github.com/purnadip-manna"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub profile"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-github"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/purnadip-manna/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn profile"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-linkedin"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="mailto:purnadip.manna@gmail.com"
+                  aria-label="Send email to Purnadip Manna"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-envelope-at-fill"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"
+                    />
+                    <path
+                      d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
-    <p class="text-center m-5" style="color: #8f8d8d">
-      Copyright © 2024, Purnadip Manna
-    </p>
+
+    <footer class="site-footer">
+      <p>Copyright © 2024, Purnadip Manna</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

@@ -12,3 +12,32 @@ $("#submitbtn").click(function () {
     },
   });
 });
+
+// Navbar scroll shadow
+const navbar = document.querySelector(".navbar");
+if (navbar) {
+  window.addEventListener("scroll", () => {
+    navbar.classList.toggle("scrolled", window.scrollY > 10);
+  });
+}
+
+// Active nav link on scroll
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".navbar .nav-link");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 100;
+    if (window.scrollY >= sectionTop) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === `#${current}`) {
+      link.classList.add("active");
+    }
+  });
+});
